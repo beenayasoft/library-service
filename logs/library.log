@@ -1,0 +1,1525 @@
+INFO 2025-07-20 10:18:36,173 autoreload 49416 49236 Watching for file changes with StatReloader
+INFO 2025-07-20 10:19:29,883 autoreload 12580 25092 Watching for file changes with StatReloader
+INFO 2025-07-20 10:22:16,808 autoreload 12580 25092 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-20 10:22:18,438 autoreload 11620 44344 Watching for file changes with StatReloader
+INFO 2025-07-20 10:22:59,628 autoreload 11620 44344 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-20 10:23:01,316 autoreload 33864 21076 Watching for file changes with StatReloader
+INFO 2025-07-20 10:25:04,271 autoreload 33864 21076 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-20 10:25:06,354 autoreload 15376 48932 Watching for file changes with StatReloader
+INFO 2025-07-20 10:26:06,757 autoreload 15376 48932 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-20 10:26:08,399 autoreload 41316 49360 Watching for file changes with StatReloader
+INFO 2025-07-20 10:26:49,004 autoreload 41316 49360 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-20 10:26:51,208 autoreload 34236 15252 Watching for file changes with StatReloader
+INFO 2025-07-20 10:27:43,894 autoreload 34236 15252 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-20 10:27:45,655 autoreload 31392 36248 Watching for file changes with StatReloader
+INFO 2025-07-20 10:28:52,256 autoreload 31392 36248 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-20 10:28:53,794 autoreload 4176 49756 Watching for file changes with StatReloader
+INFO 2025-07-20 10:41:41,923 autoreload 40560 11904 Watching for file changes with StatReloader
+INFO 2025-07-20 10:44:25,454 autoreload 40560 11904 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-20 10:44:27,568 autoreload 31308 15912 Watching for file changes with StatReloader
+INFO 2025-07-20 10:44:42,596 autoreload 31308 15912 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-20 10:44:44,130 autoreload 13564 10712 Watching for file changes with StatReloader
+INFO 2025-07-20 10:44:49,271 autoreload 13564 10712 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-20 10:44:50,623 autoreload 29724 47976 Watching for file changes with StatReloader
+INFO 2025-07-20 10:45:40,234 autoreload 29724 47976 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-20 10:45:41,742 autoreload 11528 32028 Watching for file changes with StatReloader
+INFO 2025-07-20 10:46:04,208 autoreload 11528 32028 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-20 10:46:05,743 autoreload 37160 37416 Watching for file changes with StatReloader
+INFO 2025-07-20 10:53:42,849 autoreload 37160 37416 D:\beenaya-soa\soa\services\library-service\library_service\urls.py changed, reloading.
+INFO 2025-07-20 10:53:45,087 autoreload 32948 12076 Watching for file changes with StatReloader
+INFO 2025-07-20 10:56:28,369 autoreload 32948 12076 D:\beenaya-soa\soa\services\library-service\library_service\urls.py changed, reloading.
+INFO 2025-07-20 10:56:30,047 autoreload 48240 35436 Watching for file changes with StatReloader
+INFO 2025-07-20 10:56:34,261 autoreload 48240 35436 D:\beenaya-soa\soa\services\library-service\library\urls.py changed, reloading.
+INFO 2025-07-20 10:56:35,950 autoreload 22040 21788 Watching for file changes with StatReloader
+INFO 2025-07-20 15:49:45,740 basehttp 22040 22252 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-07-20 15:49:46,478 basehttp 22040 22252 - Broken pipe from ('127.0.0.1', 32244)
+INFO 2025-07-20 15:55:35,884 autoreload 28196 23580 Watching for file changes with StatReloader
+WARNING 2025-07-20 18:14:52,977 log 28196 7208 Bad Request: /api/fournitures/
+WARNING 2025-07-20 18:14:53,040 basehttp 28196 7208 "GET /api/fournitures/ HTTP/1.1" 400 115
+INFO 2025-07-20 18:14:53,693 basehttp 28196 7208 - Broken pipe from ('127.0.0.1', 38856)
+INFO 2025-07-25 09:42:44,620 autoreload 11084 25648 Watching for file changes with StatReloader
+INFO 2025-07-25 10:12:15,599 autoreload 30048 23268 Watching for file changes with StatReloader
+INFO 2025-07-25 10:14:41,748 basehttp 30048 29500 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-07-25 10:15:15,337 basehttp 30048 2036 "GET /health/ HTTP/1.1" 200 88
+WARNING 2025-07-25 10:15:46,749 log 30048 24580 Bad Request: /api/categories/
+WARNING 2025-07-25 10:15:46,749 basehttp 30048 24580 "GET /api/categories/ HTTP/1.1" 400 115
+INFO 2025-07-25 10:18:00,836 autoreload 30048 23268 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-25 10:18:01,556 autoreload 12784 10832 Watching for file changes with StatReloader
+INFO 2025-07-25 10:18:12,515 autoreload 12784 10832 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-25 10:18:13,248 autoreload 6596 12424 Watching for file changes with StatReloader
+INFO 2025-07-25 10:18:49,411 autoreload 6596 12424 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-25 10:18:50,086 autoreload 18764 9056 Watching for file changes with StatReloader
+INFO 2025-07-25 10:23:31,105 autoreload 18764 9056 D:\beenaya-soa\soa\services\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-25 10:23:31,811 autoreload 33436 9644 Watching for file changes with StatReloader
+INFO 2025-07-25 10:24:47,330 autoreload 33436 9644 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-25 10:24:47,870 autoreload 23400 16528 Watching for file changes with StatReloader
+INFO 2025-07-25 10:24:52,382 autoreload 23400 16528 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-25 10:24:52,944 autoreload 25428 15420 Watching for file changes with StatReloader
+INFO 2025-07-25 10:25:00,526 autoreload 25428 15420 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-25 10:25:01,056 autoreload 16816 26836 Watching for file changes with StatReloader
+INFO 2025-07-25 10:25:09,677 autoreload 16816 26836 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-25 10:25:10,209 autoreload 32984 23952 Watching for file changes with StatReloader
+INFO 2025-07-25 10:25:13,650 autoreload 32984 23952 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-25 10:25:14,195 autoreload 12908 24188 Watching for file changes with StatReloader
+INFO 2025-07-25 10:25:18,680 autoreload 12908 24188 D:\beenaya-soa\soa\services\library-service\library\views.py changed, reloading.
+INFO 2025-07-25 10:25:19,195 autoreload 24580 33564 Watching for file changes with StatReloader
+INFO 2025-07-25 10:27:59,743 autoreload 31464 29820 Watching for file changes with StatReloader
+INFO 2025-07-25 10:29:27,465 basehttp 31464 31784 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-07-25 10:29:55,026 basehttp 31464 12544 "GET /health/ HTTP/1.1" 200 88
+ERROR 2025-07-25 10:29:57,302 log 31464 27700 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1609, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 765, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 85, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 74, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 252, in get_select
+    select_mask = self.query.get_select_mask()
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 885, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 854, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:29:57,311 basehttp 31464 27700 "GET /api/categories/ HTTP/1.1" 500 198532
+ERROR 2025-07-25 10:30:01,452 middleware 31464 25268 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+WARNING 2025-07-25 10:30:01,452 log 31464 25268 Unauthorized: /api/fournitures/
+WARNING 2025-07-25 10:30:01,453 basehttp 31464 25268 "GET /api/fournitures/ HTTP/1.1" 401 89
+INFO 2025-07-25 10:32:29,726 autoreload 31464 29820 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-25 10:32:29,887 autoreload 24580 33564 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-25 10:32:30,413 autoreload 7788 340 Watching for file changes with StatReloader
+INFO 2025-07-25 10:32:30,418 autoreload 26836 33004 Watching for file changes with StatReloader
+INFO 2025-07-25 10:32:39,650 autoreload 26836 33004 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-25 10:32:40,057 autoreload 7788 340 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-25 10:32:40,363 autoreload 23676 29780 Watching for file changes with StatReloader
+INFO 2025-07-25 10:32:40,635 autoreload 5300 23272 Watching for file changes with StatReloader
+INFO 2025-07-25 10:33:34,629 autoreload 23676 29780 D:\beenaya-soa\soa\services\library-service\tenant_schema\admin.py changed, reloading.
+INFO 2025-07-25 10:33:35,237 autoreload 33464 30476 Watching for file changes with StatReloader
+INFO 2025-07-25 10:34:26,418 autoreload 33464 30476 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
+INFO 2025-07-25 10:34:27,096 autoreload 1928 28008 Watching for file changes with StatReloader
+INFO 2025-07-25 10:36:45,932 basehttp 1928 33644 "GET /health/ HTTP/1.1" 200 88
+ERROR 2025-07-25 10:36:48,030 log 1928 5004 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1609, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 765, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 85, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 74, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 252, in get_select
+    select_mask = self.query.get_select_mask()
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 885, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 854, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "C:\Users\elvis\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:36:48,037 basehttp 1928 5004 "GET /api/categories/ HTTP/1.1" 500 198637
+ERROR 2025-07-25 10:36:52,186 middleware 1928 30820 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+WARNING 2025-07-25 10:36:52,186 log 1928 30820 Unauthorized: /api/fournitures/
+WARNING 2025-07-25 10:36:52,187 basehttp 1928 30820 "GET /api/fournitures/ HTTP/1.1" 401 89
+INFO 2025-07-25 10:39:02,722 autoreload 19520 28072 Watching for file changes with StatReloader
+INFO 2025-07-25 10:41:44,414 autoreload 28808 24184 Watching for file changes with StatReloader
+INFO 2025-07-25 10:44:38,350 middleware 28808 18088 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,458 middleware 28808 31464 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,715 middleware 28808 24580 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,727 middleware 28808 31668 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,734 middleware 28808 8768 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:39,098 middleware 28808 31608 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:39,580 middleware 28808 18088 Library - Migrations exécutées pour le tenant ETAO
+INFO 2025-07-25 10:44:39,580 middleware 28808 18088 Library - Nouveau tenant créé: ETAO (schéma: tenant_etao)
+INFO 2025-07-25 10:44:39,599 middleware 28808 31668 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
+INFO 2025-07-25 10:44:39,599 middleware 28808 8768 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
+INFO 2025-07-25 10:44:39,599 middleware 28808 24580 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
+INFO 2025-07-25 10:44:39,599 middleware 28808 31608 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
+INFO 2025-07-25 10:44:39,599 middleware 28808 31464 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
+INFO 2025-07-25 10:44:39,626 basehttp 28808 31668 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:44:39,627 basehttp 28808 18088 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:44:39,627 basehttp 28808 8768 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:44:39,639 basehttp 28808 31464 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:44:39,640 basehttp 28808 24580 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:44:39,640 basehttp 28808 31608 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:50:33,960 basehttp 28808 30564 "GET /health/ HTTP/1.1" 200 88
+ERROR 2025-07-25 10:50:36,045 log 28808 30740 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:50:36,052 basehttp 28808 30740 "GET /api/categories/ HTTP/1.1" 500 191383
+ERROR 2025-07-25 10:50:40,181 middleware 28808 29596 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+WARNING 2025-07-25 10:50:40,182 log 28808 29596 Unauthorized: /api/fournitures/
+WARNING 2025-07-25 10:50:40,182 basehttp 28808 29596 "GET /api/fournitures/ HTTP/1.1" 401 89
+INFO 2025-07-25 10:50:47,348 basehttp 28808 22260 "GET /health/ HTTP/1.1" 200 88
+ERROR 2025-07-25 10:50:49,435 log 28808 14204 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:50:49,440 basehttp 28808 14204 "GET /api/categories/ HTTP/1.1" 500 191383
+ERROR 2025-07-25 10:50:53,570 middleware 28808 18044 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+WARNING 2025-07-25 10:50:53,571 log 28808 18044 Unauthorized: /api/fournitures/
+WARNING 2025-07-25 10:50:53,571 basehttp 28808 18044 "GET /api/fournitures/ HTTP/1.1" 401 89
+ERROR 2025-07-25 10:51:02,560 log 28808 7060 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:51:02,580 log 28808 31460 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:51:02,600 log 28808 17416 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:51:02,633 log 28808 12332 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:51:02,634 log 28808 33240 Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'chemin_complet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\rest_framework\pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ~~~~~~~~~~~^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ~~~~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases or bool(combinator),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ~~~~~~~~~~~~~~~^
+        with_col_aliases=with_col_aliases,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 866, in get_select_mask
+    return self._get_only_select_mask(opts, mask)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\sql\query.py", line 829, in _get_only_select_mask
+    field = opts.get_field(field_name)
+  File "D:\beenaya-soa\soa\services\library-service\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
+ERROR 2025-07-25 10:51:02,637 basehttp 28808 7060 "GET /api/categories/ HTTP/1.1" 500 191654
+ERROR 2025-07-25 10:51:02,641 basehttp 28808 31460 "GET /api/categories/ HTTP/1.1" 500 191654
+ERROR 2025-07-25 10:51:02,644 basehttp 28808 17416 "GET /api/categories/ HTTP/1.1" 500 191654
+ERROR 2025-07-25 10:51:02,648 basehttp 28808 12332 "GET /api/categories/ HTTP/1.1" 500 191654
+ERROR 2025-07-25 10:51:02,651 basehttp 28808 33240 "GET /api/categories/ HTTP/1.1" 500 191654
+INFO 2025-07-25 10:52:20,428 autoreload 1928 28008 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:52:20,772 autoreload 28808 24184 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:52:21,228 autoreload 22088 30012 Watching for file changes with StatReloader
+INFO 2025-07-25 10:52:21,470 autoreload 16932 15556 Watching for file changes with StatReloader
+WARNING 2025-07-25 10:52:52,037 middleware 16932 34596 Library - Tenant invalide ou inexistant: 99999999-9999-9999-9999-999999999999
+WARNING 2025-07-25 10:52:52,038 log 16932 34596 Unauthorized: /api/categories/
+WARNING 2025-07-25 10:52:52,038 basehttp 16932 34596 "GET /api/categories/ HTTP/1.1" 401 102
+WARNING 2025-07-25 10:52:54,083 log 16932 6364 Bad Request: /api/categories/
+WARNING 2025-07-25 10:52:54,083 basehttp 16932 6364 "GET /api/categories/ HTTP/1.1" 400 98
+INFO 2025-07-25 10:52:56,131 basehttp 16932 29984 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-07-25 10:53:46,157 basehttp 16932 23104 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:53:46,276 basehttp 16932 9700 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:53:46,277 basehttp 16932 24312 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:53:46,531 basehttp 16932 23016 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:53:46,532 basehttp 16932 33220 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:53:46,778 basehttp 16932 1676 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 10:55:43,108 mixins 16932 17848 Library - Action: create, User: None, Tenant: ETAO
+INFO 2025-07-25 10:55:43,123 basehttp 16932 17848 "POST /api/fournitures/ HTTP/1.1" 201 400
+INFO 2025-07-25 10:55:43,965 basehttp 16932 25444 "GET /api/fournitures/1/ HTTP/1.1" 200 404
+INFO 2025-07-25 10:55:44,081 basehttp 16932 18516 "GET /api/fournitures/1/ HTTP/1.1" 200 404
+INFO 2025-07-25 10:57:53,418 autoreload 16932 15556 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:57:53,585 autoreload 22088 30012 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:57:53,998 autoreload 11276 33040 Watching for file changes with StatReloader
+INFO 2025-07-25 10:57:54,280 autoreload 28828 24988 Watching for file changes with StatReloader
+INFO 2025-07-25 10:58:00,453 autoreload 28828 24988 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:58:00,891 autoreload 11276 33040 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:58:01,170 autoreload 8648 14988 Watching for file changes with StatReloader
+INFO 2025-07-25 10:58:01,458 autoreload 31764 22592 Watching for file changes with StatReloader
+INFO 2025-07-25 10:58:14,654 autoreload 31764 22592 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:58:14,759 autoreload 8648 14988 D:\beenaya-soa\soa\services\library-service\library\middleware.py changed, reloading.
+INFO 2025-07-25 10:58:15,204 autoreload 32628 2028 Watching for file changes with StatReloader
+INFO 2025-07-25 10:58:15,438 autoreload 27108 34784 Watching for file changes with StatReloader
+INFO 2025-07-25 10:58:46,263 basehttp 32628 30268 "GET /health/ HTTP/1.1" 200 88
+WARNING 2025-07-25 10:58:50,389 middleware 32628 7664 Library - Tenant invalide ou inexistant: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+WARNING 2025-07-25 10:58:50,389 log 32628 7664 Unauthorized: /api/categories/
+WARNING 2025-07-25 10:58:50,390 basehttp 32628 7664 "GET /api/categories/ HTTP/1.1" 401 102
+WARNING 2025-07-25 10:58:54,615 middleware 32628 17540 Library - Tenant invalide ou inexistant: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+WARNING 2025-07-25 10:58:54,615 log 32628 17540 Unauthorized: /api/fournitures/
+WARNING 2025-07-25 10:58:54,615 basehttp 32628 17540 "GET /api/fournitures/ HTTP/1.1" 401 102
+WARNING 2025-07-25 10:58:56,677 log 32628 22104 Bad Request: /api/categories/
+WARNING 2025-07-25 10:58:56,677 basehttp 32628 22104 "GET /api/categories/ HTTP/1.1" 400 115
+INFO 2025-07-25 11:03:20,695 basehttp 32628 11376 "GET /health/ HTTP/1.1" 200 88
+WARNING 2025-07-25 11:03:24,845 middleware 32628 33300 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:24,845 log 32628 33300 Unauthorized: /api/categories/
+WARNING 2025-07-25 11:03:24,846 basehttp 32628 33300 "GET /api/categories/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:28,961 middleware 32628 7716 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:28,961 log 32628 7716 Unauthorized: /api/categories/racines/
+WARNING 2025-07-25 11:03:28,962 basehttp 32628 7716 "GET /api/categories/racines/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:33,062 middleware 32628 7668 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:33,063 log 32628 7668 Unauthorized: /api/categories/stats/
+WARNING 2025-07-25 11:03:33,063 basehttp 32628 7668 "GET /api/categories/stats/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:37,223 middleware 32628 9516 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:37,223 log 32628 9516 Unauthorized: /api/fournitures/
+WARNING 2025-07-25 11:03:37,224 basehttp 32628 9516 "GET /api/fournitures/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:41,341 middleware 32628 27620 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:41,341 log 32628 27620 Unauthorized: /api/fournitures/stats/
+WARNING 2025-07-25 11:03:41,342 basehttp 32628 27620 "GET /api/fournitures/stats/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:45,479 middleware 32628 30176 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:45,479 log 32628 30176 Unauthorized: /api/fournitures/par_categorie/
+WARNING 2025-07-25 11:03:45,480 basehttp 32628 30176 "GET /api/fournitures/par_categorie/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:49,636 middleware 32628 22124 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:49,636 log 32628 22124 Unauthorized: /api/main-oeuvre/
+WARNING 2025-07-25 11:03:49,637 basehttp 32628 22124 "GET /api/main-oeuvre/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:53,760 middleware 32628 30280 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:53,761 log 32628 30280 Unauthorized: /api/main-oeuvre/stats/
+WARNING 2025-07-25 11:03:53,761 basehttp 32628 30280 "GET /api/main-oeuvre/stats/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:03:57,903 middleware 32628 14204 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:03:57,904 log 32628 14204 Unauthorized: /api/main-oeuvre/par_categorie/
+WARNING 2025-07-25 11:03:57,904 basehttp 32628 14204 "GET /api/main-oeuvre/par_categorie/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:04:02,040 middleware 32628 30504 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:04:02,040 log 32628 30504 Unauthorized: /api/ouvrages/
+WARNING 2025-07-25 11:04:02,040 basehttp 32628 30504 "GET /api/ouvrages/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:04:06,175 middleware 32628 5560 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:04:06,176 log 32628 5560 Unauthorized: /api/ouvrages/stats/
+WARNING 2025-07-25 11:04:06,176 basehttp 32628 5560 "GET /api/ouvrages/stats/ HTTP/1.1" 401 102
+WARNING 2025-07-25 11:04:10,302 middleware 32628 8532 Library - Tenant invalide ou inexistant: 11111111-2222-3333-4444-555555555555
+WARNING 2025-07-25 11:04:10,302 log 32628 8532 Unauthorized: /api/ouvrages/par_categorie/
+WARNING 2025-07-25 11:04:10,302 basehttp 32628 8532 "GET /api/ouvrages/par_categorie/ HTTP/1.1" 401 102
+INFO 2025-07-25 11:05:29,806 basehttp 32628 30980 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:05:29,824 basehttp 32628 24204 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:05:29,826 basehttp 32628 32048 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:05:29,826 basehttp 32628 31564 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:05:29,853 basehttp 32628 16652 "GET /api/fournitures/ HTTP/1.1" 200 452
+INFO 2025-07-25 11:05:29,854 basehttp 32628 34640 "GET /api/fournitures/ HTTP/1.1" 200 452
+INFO 2025-07-25 11:05:41,756 basehttp 32628 22284 "GET /api/fournitures/1/ HTTP/1.1" 200 404
+INFO 2025-07-25 11:05:41,879 basehttp 32628 32692 "GET /api/fournitures/1/ HTTP/1.1" 200 404
+INFO 2025-07-25 11:05:56,483 mixins 32628 6256 Library - Action: update, User: None, Tenant: ETAO
+INFO 2025-07-25 11:05:56,489 basehttp 32628 6256 "PATCH /api/fournitures/1/ HTTP/1.1" 200 402
+INFO 2025-07-25 11:10:25,460 basehttp 32628 30408 "GET /api/fournitures/1/ HTTP/1.1" 200 406
+INFO 2025-07-25 11:10:26,034 basehttp 32628 34376 "GET /api/fournitures/1/ HTTP/1.1" 200 406
+INFO 2025-07-25 11:15:21,364 basehttp 32628 17880 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:21,378 basehttp 32628 6596 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:21,391 basehttp 32628 26692 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:21,392 basehttp 32628 31004 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:21,406 basehttp 32628 30792 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:15:21,406 basehttp 32628 32256 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:15:39,656 basehttp 32628 31124 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:39,674 basehttp 32628 15512 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:15:40,049 basehttp 32628 27752 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:40,055 basehttp 32628 28676 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:15:40,068 basehttp 32628 28000 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:15:40,284 basehttp 32628 25856 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:17:34,047 basehttp 32628 15332 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:17:34,065 basehttp 32628 32804 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:17:34,433 basehttp 32628 2720 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:17:34,449 basehttp 32628 6852 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:17:34,530 basehttp 32628 34248 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:17:34,674 basehttp 32628 1600 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:36:30,469 basehttp 32628 13820 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:36:30,573 basehttp 32628 19380 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:36:30,786 basehttp 32628 33908 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:36:30,794 basehttp 32628 12904 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 11:36:30,798 basehttp 32628 7944 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 11:36:31,053 basehttp 32628 27996 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:03:33,716 basehttp 32628 29516 "GET /api/fournitures/1/ HTTP/1.1" 200 406
+INFO 2025-07-25 12:03:33,716 basehttp 32628 30500 "GET /api/fournitures/1/ HTTP/1.1" 200 406
+INFO 2025-07-25 12:03:45,162 basehttp 32628 17104 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 12:03:45,417 basehttp 32628 23156 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:03:45,426 basehttp 32628 29404 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:03:45,430 basehttp 32628 24788 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:03:45,430 basehttp 32628 5032 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:03:45,438 basehttp 32628 16924 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 12:04:08,033 basehttp 32628 28572 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:04:08,033 basehttp 32628 2480 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:04:08,047 basehttp 32628 22772 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 12:04:08,290 basehttp 32628 31428 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:04:08,291 basehttp 32628 32404 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:04:08,300 basehttp 32628 27676 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 12:15:27,320 basehttp 32628 29984 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:15:27,332 basehttp 32628 32812 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:15:27,334 basehttp 32628 29976 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 12:15:27,343 basehttp 32628 27972 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 12:15:27,343 basehttp 32628 9144 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 12:15:27,413 basehttp 32628 33136 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:51,534 basehttp 32628 34644 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:51,535 basehttp 32628 27964 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:51,543 basehttp 32628 35440 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:51,545 basehttp 32628 35496 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:51,556 basehttp 32628 10320 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:42:51,559 basehttp 32628 35616 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:42:57,157 basehttp 32628 12356 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:57,171 basehttp 32628 24584 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:42:57,505 basehttp 32628 32004 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:57,505 basehttp 32628 35640 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:42:57,597 basehttp 32628 29940 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:42:57,738 basehttp 32628 32460 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:43:10,845 basehttp 32628 35124 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:43:10,854 basehttp 32628 29240 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:43:11,188 basehttp 32628 20580 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:43:11,294 basehttp 32628 35028 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:43:11,308 basehttp 32628 16744 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:43:11,435 basehttp 32628 20492 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:16,419 basehttp 32628 35036 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:16,436 basehttp 32628 29528 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:46:16,517 basehttp 32628 30016 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:16,675 basehttp 32628 31700 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:16,681 basehttp 32628 22520 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:16,689 basehttp 32628 7296 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:46:32,123 basehttp 32628 25168 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:32,145 basehttp 32628 27632 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:46:32,434 basehttp 32628 35788 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:32,444 basehttp 32628 1384 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:46:32,535 basehttp 32628 35484 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:32,685 basehttp 32628 8428 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:50,840 basehttp 32628 8532 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:50,860 basehttp 32628 1984 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:46:51,295 basehttp 32628 35152 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:51,313 basehttp 32628 35136 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 14:46:51,390 basehttp 32628 28472 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 14:46:51,540 basehttp 32628 3496 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:04:32,693 basehttp 32628 28240 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:04:32,792 basehttp 32628 26888 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 15:04:32,937 basehttp 32628 30796 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:04:32,975 basehttp 32628 10640 "GET /api/fournitures/ HTTP/1.1" 200 454
+INFO 2025-07-25 15:04:33,060 basehttp 32628 34512 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:04:33,087 basehttp 32628 2524 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:07:07,131 mixins 32628 28168 Library - Action: create, User: None, Tenant: ETAO
+INFO 2025-07-25 15:07:07,173 basehttp 32628 28168 "POST /api/fournitures/ HTTP/1.1" 201 398
+INFO 2025-07-25 15:07:08,171 basehttp 32628 17076 "GET /api/fournitures/2/ HTTP/1.1" 200 402
+INFO 2025-07-25 15:07:08,291 basehttp 32628 34212 "GET /api/fournitures/2/ HTTP/1.1" 200 402
+INFO 2025-07-25 15:07:15,066 basehttp 32628 23160 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:07:15,087 basehttp 32628 21928 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-25 15:07:15,354 basehttp 32628 27344 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:07:15,355 basehttp 32628 25984 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:07:15,355 basehttp 32628 34608 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 15:07:15,374 basehttp 32628 33424 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-25 16:28:02,753 basehttp 32628 36444 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-07-25 16:51:44,904 basehttp 32628 20076 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 16:51:44,904 basehttp 32628 31752 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 16:51:44,904 basehttp 32628 25696 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-25 16:51:44,920 basehttp 32628 36132 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-25 16:51:44,959 basehttp 32628 33300 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-25 16:51:44,960 basehttp 32628 36100 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-26 10:04:46,237 basehttp 32628 24276 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-26 10:04:49,526 basehttp 32628 31204 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-26 10:06:51,513 basehttp 32628 26112 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-26 10:06:57,364 basehttp 32628 12760 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-26 10:07:04,131 basehttp 32628 31220 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-26 10:37:28,846 basehttp 32628 14736 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-26 10:37:30,740 basehttp 32628 9768 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-26 11:39:09,871 basehttp 32628 37764 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-26 11:39:11,747 basehttp 32628 25988 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-26 12:47:15,420 autoreload 22056 26056 Watching for file changes with StatReloader
+INFO 2025-07-26 17:23:48,489 basehttp 22056 21400 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-26 17:23:52,233 basehttp 22056 27456 "GET /api/fournitures/ HTTP/1.1" 200 853
+INFO 2025-07-28 09:45:12,772 basehttp 22056 35808 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-07-28 10:48:17,938 middleware 22056 19612 Library - Création contrôlée du tenant: 8dd6f442-cd07-4993-8930-10abb2b23e7d
+INFO 2025-07-28 10:48:19,055 middleware 22056 19612 Library - Tenant créé: KEWA (schema: tenant_kewa)
+INFO 2025-07-28 10:48:19,082 basehttp 22056 19612 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-28 10:48:19,788 basehttp 22056 36632 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-28 10:48:22,444 basehttp 22056 22264 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-28 10:48:24,032 basehttp 22056 25392 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-28 10:48:25,367 basehttp 22056 12548 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-28 11:27:40,857 basehttp 22056 2628 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-28 11:27:40,898 basehttp 22056 26448 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-28 11:27:40,898 basehttp 22056 1468 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-28 11:27:40,909 basehttp 22056 37264 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-28 11:27:40,909 basehttp 22056 31616 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-28 11:27:40,910 basehttp 22056 18180 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-29 09:39:29,054 basehttp 22056 28684 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-29 09:39:31,998 basehttp 22056 2708 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-29 09:39:34,454 basehttp 22056 33356 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
+INFO 2025-07-29 09:39:36,253 basehttp 22056 29200 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-29 09:40:09,102 basehttp 22056 35876 "GET /api/ouvrages/ HTTP/1.1" 200 52
+WARNING 2025-07-29 11:17:23,986 log 22056 28000 Bad Request: /api/fournitures/
+WARNING 2025-07-29 11:17:23,988 basehttp 22056 28000 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 11:17:24,229 log 22056 40860 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 11:17:24,230 log 22056 23428 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 11:17:24,231 basehttp 22056 40860 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 11:17:24,231 basehttp 22056 23428 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 11:17:24,698 log 22056 29804 Bad Request: /api/fournitures/
+WARNING 2025-07-29 11:17:24,698 basehttp 22056 29804 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 11:17:24,982 log 22056 6928 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 11:17:24,983 log 22056 14580 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 11:17:24,983 basehttp 22056 6928 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 11:17:24,983 basehttp 22056 14580 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:11:51,029 log 22056 29600 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:11:51,032 log 22056 39288 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:11:51,033 basehttp 22056 29600 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:11:51,037 log 22056 11664 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:11:51,037 basehttp 22056 39288 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:11:51,038 basehttp 22056 11664 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:11:51,812 log 22056 14320 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:11:51,813 log 22056 29172 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:11:51,813 basehttp 22056 14320 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:11:51,813 basehttp 22056 29172 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:11:52,018 log 22056 40144 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:11:52,024 basehttp 22056 40144 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:00,367 log 22056 40040 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:21:00,368 log 22056 39436 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:21:00,368 basehttp 22056 39436 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:00,368 basehttp 22056 40040 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:00,596 log 22056 36276 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:21:00,628 log 22056 31720 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:21:00,629 log 22056 40108 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:21:00,630 basehttp 22056 36276 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:00,630 basehttp 22056 40108 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:00,630 basehttp 22056 31720 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:01,142 log 22056 20072 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:21:01,143 basehttp 22056 20072 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:25,222 log 22056 14320 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:21:25,222 log 22056 22876 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:21:25,223 basehttp 22056 14320 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:25,223 basehttp 22056 22876 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:25,476 log 22056 23860 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:21:25,477 log 22056 25404 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:21:25,516 log 22056 39416 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:21:25,517 basehttp 22056 23860 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:25,517 basehttp 22056 25404 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:25,517 basehttp 22056 39416 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:21:25,704 log 22056 28708 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:21:25,705 basehttp 22056 28708 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:18,733 log 22056 38696 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:25:18,734 log 22056 11220 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:25:18,734 basehttp 22056 38696 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:18,735 basehttp 22056 11220 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:19,040 log 22056 15200 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:25:19,041 log 22056 35368 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:25:19,042 log 22056 29140 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:25:19,043 basehttp 22056 15200 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:19,047 log 22056 2632 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:25:19,047 basehttp 22056 35368 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:19,047 basehttp 22056 29140 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:19,048 basehttp 22056 2632 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:43,150 log 22056 11608 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:25:43,151 log 22056 35788 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:25:43,151 basehttp 22056 11608 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:43,151 basehttp 22056 35788 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:43,363 log 22056 24628 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:25:43,364 log 22056 41404 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:25:43,364 log 22056 31504 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:25:43,365 basehttp 22056 24628 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:43,365 basehttp 22056 41404 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:43,366 basehttp 22056 31504 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:25:43,620 log 22056 33784 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:25:43,620 basehttp 22056 33784 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:26:31,190 log 22056 22440 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:26:31,191 log 22056 35324 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:26:31,191 basehttp 22056 22440 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:26:31,192 basehttp 22056 35324 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:26:31,456 log 22056 12952 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:26:31,457 log 22056 34884 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:26:31,493 log 22056 41788 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:26:31,493 basehttp 22056 12952 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:26:31,493 basehttp 22056 34884 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:26:31,494 basehttp 22056 41788 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:26:31,686 log 22056 39756 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:26:31,687 basehttp 22056 39756 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:28:32,289 log 22056 40080 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:28:32,290 log 22056 24864 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:28:32,290 basehttp 22056 40080 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:28:32,290 basehttp 22056 24864 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:28:32,554 log 22056 11416 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:28:32,554 log 22056 38676 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:28:32,555 log 22056 12748 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:28:32,555 basehttp 22056 11416 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:28:32,556 basehttp 22056 38676 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:28:32,556 basehttp 22056 12748 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:28:32,796 log 22056 28284 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:28:32,796 basehttp 22056 28284 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:29:18,975 log 22056 39628 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:29:18,975 log 22056 24580 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:29:18,976 basehttp 22056 24580 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:29:18,976 basehttp 22056 39628 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:29:19,231 log 22056 15044 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:29:19,231 log 22056 40044 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:29:19,231 log 22056 33236 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:29:19,232 log 22056 18972 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:29:19,233 basehttp 22056 15044 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:29:19,233 basehttp 22056 40044 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:29:19,234 basehttp 22056 33236 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:29:19,234 basehttp 22056 18972 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:32:57,538 log 22056 41716 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:32:57,539 log 22056 39380 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:32:57,539 basehttp 22056 41716 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:32:57,539 basehttp 22056 39380 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:32:57,808 log 22056 14584 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:32:57,809 log 22056 37980 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:32:57,810 log 22056 21708 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:32:57,810 basehttp 22056 14584 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:32:57,811 basehttp 22056 37980 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:32:57,811 basehttp 22056 21708 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:32:58,061 log 22056 3992 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:32:58,061 basehttp 22056 3992 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:34:20,910 log 22056 36836 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:34:20,911 log 22056 16968 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:34:20,911 basehttp 22056 36836 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:34:20,912 basehttp 22056 16968 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:34:21,176 log 22056 30244 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:34:21,176 log 22056 11844 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:34:21,177 log 22056 14924 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:34:21,177 basehttp 22056 30244 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:34:21,178 basehttp 22056 11844 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:34:21,178 basehttp 22056 14924 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:34:21,406 log 22056 8448 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:34:21,407 basehttp 22056 8448 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:03,785 log 22056 36656 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:41:03,786 log 22056 37612 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:41:03,786 basehttp 22056 36656 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:03,786 basehttp 22056 37612 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:04,084 log 22056 14628 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:41:04,085 log 22056 37636 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:41:04,086 log 22056 14380 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:41:04,086 log 22056 40608 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:41:04,087 basehttp 22056 14628 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:04,087 basehttp 22056 37636 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:04,087 basehttp 22056 14380 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:04,087 basehttp 22056 40608 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:16,820 log 22056 26080 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:41:16,821 log 22056 40196 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:41:16,822 log 22056 34740 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:41:16,822 basehttp 22056 40196 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:16,822 basehttp 22056 26080 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:16,823 basehttp 22056 34740 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:17,080 log 22056 16396 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:41:17,081 log 22056 37168 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:41:17,081 log 22056 31204 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:41:17,082 basehttp 22056 37168 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:17,082 basehttp 22056 16396 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:17,082 basehttp 22056 31204 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:38,261 log 22056 27876 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:41:38,261 log 22056 7640 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:41:38,262 basehttp 22056 27876 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:38,262 basehttp 22056 7640 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:38,526 log 22056 12080 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:41:38,526 log 22056 32004 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:41:38,527 log 22056 9984 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:41:38,527 basehttp 22056 12080 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:38,528 basehttp 22056 32004 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:38,528 basehttp 22056 9984 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:41:38,782 log 22056 6596 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:41:38,783 basehttp 22056 6596 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:09,554 log 22056 28052 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:42:09,555 log 22056 24628 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:42:09,555 basehttp 22056 28052 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:09,555 basehttp 22056 24628 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:09,817 log 22056 17100 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:42:09,864 log 22056 24420 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:42:09,865 log 22056 22312 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:42:09,866 log 22056 6568 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:42:09,866 basehttp 22056 24420 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:09,866 basehttp 22056 17100 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:09,867 basehttp 22056 22312 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:09,867 basehttp 22056 6568 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:38,957 log 22056 41832 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:42:38,958 log 22056 23708 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:42:38,959 basehttp 22056 41832 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:38,959 basehttp 22056 23708 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:39,239 log 22056 5560 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:42:39,239 log 22056 40476 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:42:39,241 log 22056 35720 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:42:39,241 basehttp 22056 5560 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:39,241 basehttp 22056 40476 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:39,242 basehttp 22056 35720 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:39,497 log 22056 17684 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:42:39,498 basehttp 22056 17684 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:51,479 log 22056 35724 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:42:51,480 log 22056 15000 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:42:51,480 basehttp 22056 35724 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:51,480 basehttp 22056 15000 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:51,741 log 22056 23984 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:42:51,741 log 22056 41664 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:42:51,742 log 22056 14000 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:42:51,742 basehttp 22056 23984 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:51,742 basehttp 22056 41664 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:51,743 basehttp 22056 14000 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:42:51,957 log 22056 35292 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:42:51,958 basehttp 22056 35292 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:08,583 log 22056 31812 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:43:08,584 log 22056 35252 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:43:08,584 basehttp 22056 31812 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:08,585 basehttp 22056 35252 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:08,849 log 22056 40948 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:43:08,850 log 22056 26496 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:43:08,850 log 22056 9316 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:43:08,851 log 22056 36564 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:43:08,880 basehttp 22056 40948 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:08,880 basehttp 22056 26496 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:08,880 basehttp 22056 9316 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:08,880 basehttp 22056 36564 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:39,507 log 22056 17524 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:43:39,507 log 22056 13008 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:43:39,508 basehttp 22056 17524 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:39,508 basehttp 22056 13008 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:39,769 log 22056 13792 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:43:39,770 log 22056 13932 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:43:39,771 log 22056 20152 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:43:39,771 log 22056 39904 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:43:39,772 basehttp 22056 13792 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:39,772 basehttp 22056 13932 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:39,772 basehttp 22056 20152 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:43:39,773 basehttp 22056 39904 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:45:28,233 log 22056 37556 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:45:28,233 log 22056 14800 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:45:28,234 basehttp 22056 37556 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:45:28,234 basehttp 22056 14800 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:45:28,494 log 22056 20076 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:45:28,495 log 22056 29392 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:45:28,495 log 22056 6516 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:45:28,496 basehttp 22056 29392 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:45:28,496 basehttp 22056 20076 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:45:28,496 basehttp 22056 6516 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:45:28,712 log 22056 39708 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:45:28,713 basehttp 22056 39708 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:47:28,704 log 22056 41452 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:47:28,705 log 22056 41760 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:47:28,706 log 22056 23484 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:47:28,706 basehttp 22056 41760 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:47:28,706 basehttp 22056 41452 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:47:28,707 basehttp 22056 23484 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:47:28,966 log 22056 13248 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:47:28,967 log 22056 34552 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:47:28,968 log 22056 38560 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:47:28,968 basehttp 22056 13248 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:47:28,968 basehttp 22056 34552 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:47:28,968 basehttp 22056 38560 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:04,262 log 22056 39240 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:04,262 log 22056 11984 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:04,263 basehttp 22056 39240 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:04,263 basehttp 22056 11984 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:04,523 log 22056 19652 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:04,524 log 22056 13880 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:04,524 log 22056 23684 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:04,525 basehttp 22056 19652 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:04,525 basehttp 22056 13880 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:04,525 basehttp 22056 23684 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:04,753 log 22056 25104 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:04,754 basehttp 22056 25104 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:21,831 log 22056 31724 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:21,863 log 22056 11912 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:21,863 log 22056 38976 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:21,863 basehttp 22056 31724 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:21,863 basehttp 22056 11912 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:21,864 basehttp 22056 38976 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:22,091 log 22056 26460 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:22,091 log 22056 24284 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:22,091 log 22056 40328 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:22,092 basehttp 22056 26460 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:22,092 basehttp 22056 24284 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:22,092 basehttp 22056 40328 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:41,650 log 22056 26012 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:41,651 log 22056 31460 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:41,651 log 22056 11984 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:41,652 basehttp 22056 26012 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:41,652 basehttp 22056 31460 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:41,652 basehttp 22056 11984 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:41,911 log 22056 33660 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:41,912 log 22056 38472 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:41,912 log 22056 39240 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:41,913 basehttp 22056 33660 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:41,913 basehttp 22056 39240 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:41,913 basehttp 22056 38472 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:59,474 log 22056 32264 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:59,474 log 22056 9828 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:59,475 basehttp 22056 9828 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:59,475 basehttp 22056 32264 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:59,726 log 22056 26936 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:48:59,726 log 22056 33632 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:48:59,727 log 22056 17452 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:59,727 basehttp 22056 26936 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:59,728 basehttp 22056 33632 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:59,728 basehttp 22056 17452 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:48:59,989 log 22056 33660 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:48:59,989 basehttp 22056 33660 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:14,659 log 22056 33520 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:49:14,660 log 22056 38544 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:49:14,660 log 22056 17472 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:49:14,661 basehttp 22056 38544 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:14,661 basehttp 22056 33520 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:14,661 basehttp 22056 17472 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:14,920 log 22056 36008 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:49:14,920 log 22056 40820 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:49:14,921 log 22056 25124 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:49:14,921 basehttp 22056 36008 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:14,922 basehttp 22056 25124 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:14,922 basehttp 22056 40820 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:34,236 log 22056 40064 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:49:34,236 log 22056 12740 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:49:34,237 basehttp 22056 40064 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:34,237 basehttp 22056 12740 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:34,494 log 22056 29136 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:49:34,495 log 22056 36336 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:49:34,496 log 22056 14856 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:49:34,496 basehttp 22056 36336 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:34,496 basehttp 22056 29136 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:34,496 basehttp 22056 14856 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:49:34,725 log 22056 41592 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:49:34,725 basehttp 22056 41592 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:50:22,625 log 22056 41412 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:50:22,626 log 22056 26236 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:50:22,626 basehttp 22056 41412 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:50:22,627 basehttp 22056 26236 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:50:22,886 log 22056 13152 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:50:22,887 log 22056 22168 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:50:22,887 log 22056 35344 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:50:22,888 log 22056 41696 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:50:22,888 basehttp 22056 13152 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:50:22,888 basehttp 22056 22168 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:50:22,889 basehttp 22056 35344 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:50:22,889 basehttp 22056 41696 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:51:05,016 log 22056 34136 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:51:05,017 log 22056 41740 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:51:05,017 basehttp 22056 34136 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:51:05,017 basehttp 22056 41740 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:51:05,271 log 22056 39656 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:51:05,271 log 22056 22324 Bad Request: /api/fournitures/
+WARNING 2025-07-29 12:51:05,272 log 22056 13824 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-29 12:51:05,273 log 22056 38796 Bad Request: /api/ouvrages/
+WARNING 2025-07-29 12:51:05,273 basehttp 22056 39656 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:51:05,273 basehttp 22056 22324 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:51:05,274 basehttp 22056 13824 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-29 12:51:05,274 basehttp 22056 38796 "GET /api/ouvrages/ HTTP/1.1" 400 98
