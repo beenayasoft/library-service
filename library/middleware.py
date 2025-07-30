@@ -54,10 +54,21 @@ class HeaderTenantMiddleware:
             }, status=400)
 
         try:
-            # Valider que c'est un UUID valide
+            # Nettoyer et valider que c'est un UUID valide
             try:
-                tenant_uuid = uuid.UUID(tenant_id)
+                # Gérer les en-têtes dupliqués (séparés par des virgules)
+                if ',' in tenant_id:
+                    # Prendre le premier UUID si plusieurs sont présents
+                    tenant_id = tenant_id.split(',')[0].strip()
+                    logger.warning(f"Library - En-têtes X-Tenant-ID dupliqués détectés, utilisation du premier: {tenant_id}")
+                
+                # Nettoyer l'UUID (supprimer espaces, etc.)
+                clean_tenant_id = tenant_id.strip()
+                tenant_uuid = uuid.UUID(clean_tenant_id)
+                # Utiliser l'UUID nettoyé pour la suite
+                tenant_id = str(tenant_uuid)
             except ValueError:
+                logger.error(f"Library - UUID invalide reçu: '{tenant_id}' (longueur: {len(tenant_id)})")
                 return JsonResponse({
                     'error': 'X-Tenant-ID doit être un UUID valide',
                     'code': 'invalid_uuid_format',
@@ -93,8 +104,8 @@ class HeaderTenantMiddleware:
                     'schema_name': tenant_data.get('schema_name', f"tenant_{str(tenant_uuid).replace('-', '_')}")
                 }
                 
-                # Mettre en cache pour 5 minutes
-                cache.set(cache_key, tenant_info, 300)
+                # Mettre en cache pour 30 minutes (pour réduire les appels tenant-service)
+                cache.set(cache_key, tenant_info, 1800)
             
             # Vérifier que le tenant est actif
             if not tenant_info.get('is_active'):
@@ -192,7 +203,15 @@ class HeaderTenantMiddleware:
                     
             except Exception as create_error:
                 # En cas d'erreur, essayer de récupérer (race condition possible)
-                logger.warning(f"Library - Erreur création, récupération: {str(create_error)}")
+                if "duplicate key value violates unique constraint" in str(create_error):
+                    logger.debug(f"Library - Race condition détectée pour tenant {tenant_uuid}, récupération...")
+                    tenant = Client.objects.filter(tenant_uuid=tenant_uuid).first()
+                    if tenant:
+                        logger.debug(f"Library - Tenant récupéré après race condition: {tenant.name}")
+                        return tenant
+                else:
+                    logger.warning(f"Library - Erreur création, récupération: {str(create_error)}")
+                
                 tenant = Client.objects.filter(tenant_uuid=tenant_uuid).first()
                 if tenant:
                     return tenant

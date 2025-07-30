@@ -105,7 +105,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         'LOCATION': 'library-service-cache',
-        'TIMEOUT': 300,  # 5 minutes par défaut
+        'TIMEOUT': 1800,  # 30 minutes pour réduire les appels au tenant-service
         'OPTIONS': {
             'MAX_ENTRIES': 1000,  # Limiter la taille du cache
             'CULL_FREQUENCY': 3,  # Supprimer 1/3 des entrées quand le cache est plein
