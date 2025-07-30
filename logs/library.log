@@ -1978,3 +1978,12 @@ INFO 2025-07-30 15:26:33,560 basehttp 26044 27192 "GET /api/ouvrages/ HTTP/1.1" 
 INFO 2025-07-30 15:26:34,062 basehttp 26044 23680 "GET /api/fournitures/ HTTP/1.1" 200 52
 INFO 2025-07-30 15:26:34,696 basehttp 26044 16608 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
 INFO 2025-07-30 15:26:36,438 basehttp 26044 10684 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
+INFO 2025-07-30 15:30:15,966 autoreload 20512 27524 Watching for file changes with StatReloader
+INFO 2025-07-30 15:31:48,538 basehttp 20512 10072 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:31:48,539 basehttp 20512 5312 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:31:48,679 basehttp 20512 6236 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:31:48,706 basehttp 20512 26528 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:31:49,749 basehttp 20512 19692 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
+INFO 2025-07-30 15:31:50,115 basehttp 20512 8488 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
+INFO 2025-07-30 15:32:11,391 mixins 20512 28584 Library - Action: update, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-07-30 15:32:11,511 basehttp 20512 28584 "PATCH /api/main-oeuvre/1/ HTTP/1.1" 200 376
