@@ -114,7 +114,7 @@ CACHES = {
 }
 
 # Cache settings
-CACHE_TTL = 60 * 5  # 5 minutes pour les infos tenant
+CACHE_TTL = 60 * 30  # 30 minutes pour les infos tenant (optimisé)
 
 # REST Framework Configuration - Aligné avec CRM/Document services
 REST_FRAMEWORK = {

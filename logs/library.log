@@ -1910,3 +1910,71 @@ INFO 2025-07-30 14:48:03,227 autoreload 5164 13420 C:\Users\jean\Documents\proje
 INFO 2025-07-30 14:48:13,319 autoreload 1300 22236 Watching for file changes with StatReloader
 INFO 2025-07-30 14:48:30,879 basehttp 1300 11876 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 370
 INFO 2025-07-30 14:48:31,411 basehttp 1300 27916 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 370
+INFO 2025-07-30 15:03:01,432 autoreload 12892 17248 Watching for file changes with StatReloader
+INFO 2025-07-30 15:05:28,261 basehttp 12892 11196 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 370
+INFO 2025-07-30 15:05:28,289 basehttp 12892 27928 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 370
+INFO 2025-07-30 15:05:46,710 basehttp 12892 26500 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:05:46,711 basehttp 12892 17012 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:05:46,722 basehttp 12892 27176 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:05:47,324 basehttp 12892 27572 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:05:48,794 basehttp 12892 1184 "GET /api/main-oeuvre/ HTTP/1.1" 200 418
+INFO 2025-07-30 15:05:48,898 basehttp 12892 8968 "GET /api/main-oeuvre/ HTTP/1.1" 200 418
+INFO 2025-07-30 15:06:23,224 mixins 12892 10420 Library - Action: create, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-07-30 15:06:23,355 basehttp 12892 10420 "POST /api/main-oeuvre/ HTTP/1.1" 201 367
+INFO 2025-07-30 15:06:27,352 basehttp 12892 6240 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 371
+INFO 2025-07-30 15:06:27,452 basehttp 12892 10752 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 371
+INFO 2025-07-30 15:06:48,354 basehttp 12892 6336 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:06:48,550 basehttp 12892 21560 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:06:48,586 basehttp 12892 9896 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:06:48,599 basehttp 12892 10388 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:06:50,607 basehttp 12892 9368 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:06:50,652 basehttp 12892 18612 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+WARNING 2025-07-30 15:09:44,308 log 12892 1772 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 15:09:44,312 basehttp 12892 1772 "PATCH /api/library/main-oeuvre/1/ HTTP/1.1" 404 14654
+WARNING 2025-07-30 15:10:00,382 log 12892 24212 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 15:10:00,384 basehttp 12892 24212 "PATCH /api/library/main-oeuvre/1/ HTTP/1.1" 404 14654
+INFO 2025-07-30 15:13:40,909 basehttp 12892 19548 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:13:40,999 basehttp 12892 10328 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:13:41,009 basehttp 12892 21024 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:13:41,077 basehttp 12892 10116 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:13:42,493 basehttp 12892 15004 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:13:43,076 basehttp 12892 27064 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:16:40,413 autoreload 12892 17248 C:\Users\jean\Documents\projet\library-service\library_service\settings.py changed, reloading.
+INFO 2025-07-30 15:16:48,945 autoreload 11496 16076 Watching for file changes with StatReloader
+INFO 2025-07-30 15:21:01,245 autoreload 26044 27176 Watching for file changes with StatReloader
+INFO 2025-07-30 15:22:57,251 basehttp 26044 9960 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:22:57,387 basehttp 26044 28036 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:22:57,554 basehttp 26044 25436 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:22:57,625 basehttp 26044 15008 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:22:59,700 basehttp 26044 11208 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:23:00,044 basehttp 26044 28076 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:23:15,888 basehttp 26044 28200 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 370
+INFO 2025-07-30 15:23:15,950 basehttp 26044 7288 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 370
+INFO 2025-07-30 15:23:52,041 basehttp 26044 22616 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:23:52,059 basehttp 26044 25972 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:23:52,060 basehttp 26044 22196 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:23:52,837 basehttp 26044 23184 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:23:53,920 basehttp 26044 11708 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:23:54,185 basehttp 26044 28232 "GET /api/main-oeuvre/ HTTP/1.1" 200 786
+INFO 2025-07-30 15:24:03,312 basehttp 26044 21724 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 371
+INFO 2025-07-30 15:24:03,545 basehttp 26044 9128 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 371
+INFO 2025-07-30 15:24:26,185 mixins 26044 17168 Library - Action: update, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-07-30 15:24:26,319 basehttp 26044 17168 "PATCH /api/main-oeuvre/2/ HTTP/1.1" 200 374
+INFO 2025-07-30 15:24:42,023 basehttp 26044 19544 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:24:42,339 basehttp 26044 27800 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:24:42,378 basehttp 26044 24928 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:24:42,492 basehttp 26044 25504 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:24:43,213 basehttp 26044 21512 "GET /api/main-oeuvre/ HTTP/1.1" 200 793
+INFO 2025-07-30 15:24:43,801 basehttp 26044 18756 "GET /api/main-oeuvre/ HTTP/1.1" 200 793
+WARNING 2025-07-30 15:24:56,006 log 26044 13984 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 15:24:56,008 basehttp 26044 13984 "PATCH /api/library/main-oeuvre/2/ HTTP/1.1" 404 14654
+INFO 2025-07-30 15:26:02,008 basehttp 26044 6660 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 378
+INFO 2025-07-30 15:26:02,050 basehttp 26044 27904 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 378
+INFO 2025-07-30 15:26:19,730 mixins 26044 24956 Library - Action: update, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-07-30 15:26:19,854 basehttp 26044 24956 "PATCH /api/main-oeuvre/2/ HTTP/1.1" 200 365
+INFO 2025-07-30 15:26:33,382 basehttp 26044 3524 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:26:33,489 basehttp 26044 22804 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:26:33,560 basehttp 26044 27192 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:26:34,062 basehttp 26044 23680 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:26:34,696 basehttp 26044 16608 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
+INFO 2025-07-30 15:26:36,438 basehttp 26044 10684 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
