@@ -1987,3 +1987,194 @@ INFO 2025-07-30 15:31:49,749 basehttp 20512 19692 "GET /api/main-oeuvre/ HTTP/1.
 INFO 2025-07-30 15:31:50,115 basehttp 20512 8488 "GET /api/main-oeuvre/ HTTP/1.1" 200 784
 INFO 2025-07-30 15:32:11,391 mixins 20512 28584 Library - Action: update, User: elvislex@live.fr, Tenant: ETAO
 INFO 2025-07-30 15:32:11,511 basehttp 20512 28584 "PATCH /api/main-oeuvre/1/ HTTP/1.1" 200 376
+INFO 2025-07-30 15:32:43,191 autoreload 10388 24568 Watching for file changes with StatReloader
+INFO 2025-07-30 15:33:12,557 basehttp 10388 28208 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 369
+INFO 2025-07-30 15:33:12,603 basehttp 10388 3940 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 369
+INFO 2025-07-30 15:34:00,583 basehttp 10388 9776 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:34:00,740 basehttp 10388 28604 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:34:01,609 basehttp 10388 28408 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:34:03,174 basehttp 10388 17752 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:34:03,930 basehttp 10388 23300 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:34:05,263 basehttp 10388 1380 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:44:19,207 basehttp 10388 14900 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:44:19,227 basehttp 10388 3240 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:44:19,257 basehttp 10388 1156 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:44:19,302 basehttp 10388 20396 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:44:20,446 basehttp 10388 11108 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:44:20,674 basehttp 10388 7560 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:46:33,549 autoreload 15844 27588 Watching for file changes with StatReloader
+INFO 2025-07-30 15:49:42,851 basehttp 15844 28584 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:49:43,133 basehttp 15844 15860 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:49:43,134 basehttp 15844 16668 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:49:43,495 basehttp 15844 19308 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:49:44,823 basehttp 15844 17208 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:49:44,824 basehttp 15844 12184 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:52:23,963 basehttp 15844 15588 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:52:23,965 basehttp 15844 10280 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:52:24,108 basehttp 15844 27768 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:52:24,404 basehttp 15844 7672 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:52:25,320 basehttp 15844 8332 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:52:25,564 basehttp 15844 10848 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 15:56:40,884 middleware 15844 26592 Library - Création contrôlée du tenant: 717aeaa9-68d9-4f77-9a24-9308d5bd77e9
+INFO 2025-07-30 15:56:41,145 middleware 15844 28576 Library - Création contrôlée du tenant: 717aeaa9-68d9-4f77-9a24-9308d5bd77e9
+INFO 2025-07-30 15:56:41,364 middleware 15844 23392 Library - Création contrôlée du tenant: 717aeaa9-68d9-4f77-9a24-9308d5bd77e9
+INFO 2025-07-30 15:56:41,455 middleware 15844 26232 Library - Création contrôlée du tenant: 717aeaa9-68d9-4f77-9a24-9308d5bd77e9
+INFO 2025-07-30 15:56:42,187 middleware 15844 9024 Library - Création contrôlée du tenant: 717aeaa9-68d9-4f77-9a24-9308d5bd77e9
+INFO 2025-07-30 15:56:42,321 middleware 15844 12252 Library - Création contrôlée du tenant: 717aeaa9-68d9-4f77-9a24-9308d5bd77e9
+INFO 2025-07-30 15:57:30,628 middleware 15844 26592 Library - Tenant créé: moolight (schema: tenant_moolight)
+INFO 2025-07-30 15:57:30,816 basehttp 15844 26592 - Broken pipe from ('127.0.0.1', 61093)
+INFO 2025-07-30 15:57:30,987 basehttp 15844 28576 - Broken pipe from ('127.0.0.1', 61101)
+INFO 2025-07-30 15:57:31,032 basehttp 15844 12252 - Broken pipe from ('127.0.0.1', 61102)
+INFO 2025-07-30 15:57:31,049 basehttp 15844 23392 - Broken pipe from ('127.0.0.1', 61103)
+INFO 2025-07-30 15:57:31,065 basehttp 15844 26232 - Broken pipe from ('127.0.0.1', 61094)
+INFO 2025-07-30 15:57:31,110 basehttp 15844 9024 - Broken pipe from ('127.0.0.1', 61104)
+INFO 2025-07-30 15:58:25,707 mixins 15844 24612 Library - Action: create, User: ggeeegggeg@live.fr, Tenant: moolight
+INFO 2025-07-30 15:58:25,839 basehttp 15844 24612 "POST /api/main-oeuvre/ HTTP/1.1" 201 342
+INFO 2025-07-30 15:58:35,626 basehttp 15844 27204 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 346
+INFO 2025-07-30 15:58:35,752 basehttp 15844 23084 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 346
+INFO 2025-07-30 15:59:09,042 basehttp 15844 5704 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:59:09,043 basehttp 15844 18648 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:59:09,070 basehttp 15844 27724 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:59:09,326 basehttp 15844 28524 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 15:59:09,609 basehttp 15844 1380 "GET /api/main-oeuvre/ HTTP/1.1" 200 394
+INFO 2025-07-30 15:59:09,833 basehttp 15844 23232 "GET /api/main-oeuvre/ HTTP/1.1" 200 394
+INFO 2025-07-30 15:59:56,990 mixins 15844 25576 Library - Action: create, User: ggeeegggeg@live.fr, Tenant: moolight
+INFO 2025-07-30 15:59:57,124 basehttp 15844 25576 "POST /api/main-oeuvre/ HTTP/1.1" 201 340
+INFO 2025-07-30 16:00:23,674 basehttp 15844 9456 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 344
+INFO 2025-07-30 16:00:23,769 basehttp 15844 16592 "GET /api/main-oeuvre/2/ HTTP/1.1" 200 344
+INFO 2025-07-30 16:00:46,096 mixins 15844 23948 Library - Action: update, User: ggeeegggeg@live.fr, Tenant: moolight
+INFO 2025-07-30 16:00:46,552 basehttp 15844 23948 "PATCH /api/main-oeuvre/2/ HTTP/1.1" 200 341
+INFO 2025-07-30 16:01:43,627 basehttp 15844 15200 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:01:43,675 basehttp 15844 22240 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:01:43,706 basehttp 15844 13492 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:01:44,542 basehttp 15844 12388 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:01:45,008 basehttp 15844 22916 "GET /api/main-oeuvre/ HTTP/1.1" 200 736
+INFO 2025-07-30 16:01:45,386 basehttp 15844 27844 "GET /api/main-oeuvre/ HTTP/1.1" 200 736
+INFO 2025-07-30 16:04:44,773 basehttp 15844 13292 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:04:44,791 basehttp 15844 8036 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:04:44,834 basehttp 15844 6632 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:04:46,115 basehttp 15844 8660 "GET /api/main-oeuvre/ HTTP/1.1" 200 736
+INFO 2025-07-30 16:04:46,191 basehttp 15844 3056 "GET /api/main-oeuvre/ HTTP/1.1" 200 736
+INFO 2025-07-30 16:07:27,429 mixins 15844 3644 Library - Action: create, User: ggeeegggeg@live.fr, Tenant: moolight
+INFO 2025-07-30 16:07:27,618 basehttp 15844 3644 "POST /api/main-oeuvre/ HTTP/1.1" 201 338
+INFO 2025-07-30 16:07:45,986 basehttp 15844 20884 "GET /api/main-oeuvre/3/ HTTP/1.1" 200 342
+INFO 2025-07-30 16:07:46,584 basehttp 15844 25412 "GET /api/main-oeuvre/3/ HTTP/1.1" 200 342
+INFO 2025-07-30 16:08:21,066 basehttp 15844 27968 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:08:21,242 basehttp 15844 23888 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:08:21,251 basehttp 15844 24692 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:08:22,236 basehttp 15844 16908 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:08:23,071 basehttp 15844 26552 "GET /api/main-oeuvre/ HTTP/1.1" 200 1075
+INFO 2025-07-30 16:08:24,509 basehttp 15844 18408 "GET /api/main-oeuvre/ HTTP/1.1" 200 1075
+INFO 2025-07-30 16:18:18,979 basehttp 15844 21224 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:18:19,306 basehttp 15844 16284 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:18:21,099 basehttp 15844 22948 "GET /api/main-oeuvre/ HTTP/1.1" 200 1075
+INFO 2025-07-30 16:40:27,319 basehttp 15844 28640 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:40:27,321 basehttp 15844 23300 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:40:27,528 basehttp 15844 1352 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:40:27,549 basehttp 15844 21060 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 16:40:28,840 basehttp 15844 8780 "GET /api/main-oeuvre/ HTTP/1.1" 200 1075
+INFO 2025-07-30 16:40:29,712 basehttp 15844 20296 "GET /api/main-oeuvre/ HTTP/1.1" 200 1075
+INFO 2025-07-30 16:43:55,062 mixins 15844 6056 Library - Action: create, User: ggeeegggeg@live.fr, Tenant: moolight
+INFO 2025-07-30 16:43:55,364 basehttp 15844 6056 "POST /api/main-oeuvre/ HTTP/1.1" 201 337
+WARNING 2025-07-30 16:44:13,773 log 15844 27904 Not Found: /api/library/main-oeuvre/4/
+WARNING 2025-07-30 16:44:13,795 basehttp 15844 27904 "GET /api/library/main-oeuvre/4/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 16:44:13,833 log 15844 19452 Not Found: /api/library/main-oeuvre/4/
+WARNING 2025-07-30 16:44:13,835 basehttp 15844 19452 "GET /api/library/main-oeuvre/4/ HTTP/1.1" 404 14652
+INFO 2025-07-30 19:45:03,110 basehttp 15844 20672 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 19:45:03,137 basehttp 15844 27864 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 19:45:03,827 basehttp 15844 11352 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 19:45:03,884 basehttp 15844 5548 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 19:45:05,279 basehttp 15844 28028 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 19:45:06,451 basehttp 15844 16680 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 19:46:38,512 log 15844 28580 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 19:46:38,516 basehttp 15844 28580 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 19:46:39,889 log 15844 26212 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 19:46:39,890 basehttp 15844 26212 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+INFO 2025-07-30 20:04:32,099 basehttp 15844 14932 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:04:32,095 basehttp 15844 26448 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:04:32,106 basehttp 15844 7288 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:04:32,107 basehttp 15844 3196 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:04:33,444 basehttp 15844 1648 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 20:04:33,446 basehttp 15844 14972 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 20:04:49,420 log 15844 12820 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:04:49,424 basehttp 15844 12820 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:04:49,453 log 15844 10556 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:04:49,463 basehttp 15844 10556 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:17:41,661 log 15844 28308 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:17:41,666 basehttp 15844 28308 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:17:41,725 log 15844 19712 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:17:41,727 basehttp 15844 19712 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:34:40,160 log 15844 15464 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:34:40,166 basehttp 15844 15464 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:34:40,854 log 15844 22736 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:34:40,856 basehttp 15844 22736 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:40:59,994 log 15844 24584 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:40:59,999 basehttp 15844 24584 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 20:41:00,138 log 15844 25724 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 20:41:00,140 basehttp 15844 25724 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+INFO 2025-07-30 20:41:26,141 basehttp 15844 3940 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:41:26,296 basehttp 15844 23780 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:41:26,307 basehttp 15844 8240 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:41:26,426 basehttp 15844 25960 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:41:27,537 basehttp 15844 17376 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 20:41:27,854 basehttp 15844 19668 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 20:42:13,807 basehttp 15844 27064 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:42:14,962 basehttp 15844 22352 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 20:42:23,111 basehttp 15844 27120 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:42:26,625 basehttp 15844 18528 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:42:26,838 basehttp 15844 27596 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 20:42:28,560 basehttp 15844 14944 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 21:23:06,292 basehttp 15844 15384 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:23:06,295 basehttp 15844 136 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:23:06,296 basehttp 15844 18528 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:23:07,510 basehttp 15844 3000 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:23:08,104 basehttp 15844 7716 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 21:23:08,303 basehttp 15844 15712 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 21:23:23,745 log 15844 26884 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 21:23:23,760 log 15844 14368 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 21:23:23,760 basehttp 15844 26884 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:23:23,763 basehttp 15844 14368 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+INFO 2025-07-30 21:36:31,072 basehttp 15844 24072 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:36:31,181 basehttp 15844 28648 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:36:31,197 basehttp 15844 28316 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:36:31,350 basehttp 15844 14676 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:36:32,617 basehttp 15844 14944 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 21:36:33,355 basehttp 15844 6136 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 21:36:42,398 log 15844 24184 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 21:36:42,400 basehttp 15844 24184 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:36:42,674 log 15844 12456 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 21:36:42,676 basehttp 15844 12456 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:43:31,605 log 15844 20632 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 21:43:31,610 basehttp 15844 20632 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:43:31,717 log 15844 1940 Not Found: /api/library/main-oeuvre/2/
+WARNING 2025-07-30 21:43:31,792 basehttp 15844 1940 "GET /api/library/main-oeuvre/2/ HTTP/1.1" 404 14652
+INFO 2025-07-30 21:44:50,116 basehttp 15844 5788 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:44:50,642 basehttp 15844 27240 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:44:50,761 basehttp 15844 16872 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:44:51,100 basehttp 15844 12388 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:44:52,902 basehttp 15844 28504 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 21:44:53,210 basehttp 15844 21620 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 21:45:03,566 log 15844 12252 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 21:45:03,568 basehttp 15844 12252 "GET /api/library/main-oeuvre/1/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:45:03,900 log 15844 1552 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 21:45:03,902 basehttp 15844 1552 "GET /api/library/main-oeuvre/1/ HTTP/1.1" 404 14652
+INFO 2025-07-30 21:47:57,050 basehttp 15844 21144 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:47:57,051 basehttp 15844 20700 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:47:57,749 basehttp 15844 19872 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:47:57,858 basehttp 15844 27484 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:47:59,186 basehttp 15844 22540 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 21:47:59,353 basehttp 15844 19984 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 21:48:06,677 log 15844 26808 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 21:48:06,679 basehttp 15844 26808 "GET /api/library/main-oeuvre/1/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:48:06,719 log 15844 8112 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 21:48:06,721 basehttp 15844 8112 "GET /api/library/main-oeuvre/1/ HTTP/1.1" 404 14652
+INFO 2025-07-30 21:51:47,572 basehttp 15844 4960 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:51:47,572 basehttp 15844 24948 "GET /api/fournitures/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:51:47,631 basehttp 15844 22928 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:51:47,656 basehttp 15844 28360 "GET /api/ouvrages/ HTTP/1.1" 200 52
+INFO 2025-07-30 21:51:48,790 basehttp 15844 25336 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+INFO 2025-07-30 21:51:48,933 basehttp 15844 20672 "GET /api/main-oeuvre/ HTTP/1.1" 200 794
+WARNING 2025-07-30 21:51:55,199 log 15844 13468 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 21:51:55,201 basehttp 15844 13468 "GET /api/library/main-oeuvre/1/ HTTP/1.1" 404 14652
+WARNING 2025-07-30 21:51:55,302 log 15844 15456 Not Found: /api/library/main-oeuvre/1/
+WARNING 2025-07-30 21:51:55,304 basehttp 15844 15456 "GET /api/library/main-oeuvre/1/ HTTP/1.1" 404 14652
