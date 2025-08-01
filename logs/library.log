@@ -2621,3 +2621,4 @@ INFO 2025-08-01 10:43:06,343 basehttp 25304 23940 "GET /api/fournitures/ HTTP/1.
 INFO 2025-08-01 10:43:06,498 basehttp 25304 22404 "GET /api/fournitures/ HTTP/1.1" 200 1405
 INFO 2025-08-01 10:43:08,867 basehttp 25304 22556 "GET /api/ouvrages/ HTTP/1.1" 200 2196
 INFO 2025-08-01 10:43:09,229 basehttp 25304 13300 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+INFO 2025-08-01 11:26:11,211 autoreload 5036 7320 Watching for file changes with StatReloader
