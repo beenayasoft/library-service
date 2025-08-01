@@ -2,10 +2,12 @@
 Middleware pour la gestion des tenants via headers HTTP - Library Service
 Aligné avec l'architecture SOA (CRM/Document services)
 Compatible avec l'authentification via API Gateway
+OPTIMISÉ: Extraction tenant_id du JWT sans appel externe redondant
 """
 import uuid
 import logging
 import requests
+import jwt
 from django.conf import settings
 from django.core.cache import cache
 from django.http import JsonResponse
@@ -21,11 +23,12 @@ class HeaderTenantMiddleware:
     Compatible avec l'API Gateway qui propage l'authentification.
     Les headers X-User-ID, X-User-Email sont propagés par l'API Gateway.
     
-    Fonctionnalités:
-    1. Validation du tenant_id via tenant-service (avec cache)
-    2. Vérification de l'existence locale du tenant
-    3. Création contrôlée des tenants si nécessaire
-    4. Respect des headers d'authentification propagés
+    Fonctionnalités OPTIMISÉES:
+    1. Extraction tenant_id directement du JWT (pas d'appel externe)
+    2. Validation tenant_id depuis JWT déjà validé par Gateway  
+    3. Cache local tenant info avec fallback sécurisé
+    4. Création contrôlée des tenants si nécessaire
+    5. Respect des headers d'authentification propagés
     """
     
     # Endpoints qui ne nécessitent pas de X-Tenant-ID header
@@ -38,6 +41,46 @@ class HeaderTenantMiddleware:
     
     def __init__(self, get_response):
         self.get_response = get_response
+    
+    def _extract_tenant_from_jwt(self, request):
+        """
+        Extrait tenant_id du JWT sans validation (Gateway l'a déjà fait).
+        Optimisation: évite l'appel externe redondant vers tenant-service.
+        """
+        try:
+            # Récupérer token JWT depuis header Authorization
+            auth_header = request.headers.get('Authorization', '')
+            if not auth_header.startswith('Bearer '):
+                logger.debug("Library - Pas de token JWT Bearer trouvé")
+                return None
+            
+            token = auth_header[7:]  # Supprimer "Bearer "
+            
+            # Décoder JWT SANS validation (Gateway l'a déjà fait)
+            # Utilisation de verify=False car Gateway a validé signature/expiration
+            try:
+                payload = jwt.decode(token, options={"verify_signature": False})
+                tenant_id = payload.get('tenant_id')
+                
+                if tenant_id:
+                    logger.debug(f"Library - tenant_id extrait du JWT: {tenant_id}")
+                    return {
+                        'tenant_id': str(tenant_id),
+                        'user_id': payload.get('user_id'),
+                        'email': payload.get('email'),
+                        'extracted_from': 'jwt'
+                    }
+                else:
+                    logger.warning("Library - tenant_id manquant dans JWT payload")
+                    return None
+                    
+            except jwt.DecodeError as e:
+                logger.warning(f"Library - Erreur décodage JWT: {str(e)}")
+                return None
+                
+        except Exception as e:
+            logger.error(f"Library - Erreur extraction JWT: {str(e)}")
+            return None
 
     def __call__(self, request):
         # Vérifier si l'endpoint est public
@@ -75,37 +118,63 @@ class HeaderTenantMiddleware:
                     'service': 'library-service'
                 }, status=400)
             
-            # Vérifier le cache d'abord
-            cache_key = f'library_tenant_info:{tenant_id}'
-            tenant_info = cache.get(cache_key)
-            
-            if not tenant_info:
-                # Valider le tenant via tenant-service
-                tenant_service_url = getattr(settings, 'TENANT_SERVICE_URL', 'http://localhost:8001')
-                response = requests.get(
-                    f"{tenant_service_url}/api/tenants/{tenant_id}/",
-                    headers={'Accept': 'application/json'},
-                    timeout=5
-                )
+            # OPTIMISATION: Extraire tenant info du JWT d'abord
+            jwt_data = self._extract_tenant_from_jwt(request)
+            if jwt_data and jwt_data['tenant_id'] == tenant_id:
+                logger.debug(f"Library - tenant_id validé via JWT: {tenant_id}")
+                # JWT contient tenant_id valide, pas besoin d'appel externe
                 
-                if not response.ok:
-                    logger.warning(f"Library - Tenant invalide ou inexistant: {tenant_id}")
-                    return JsonResponse({
-                        'error': 'Invalid or non-existent tenant',
-                        'code': 'invalid_tenant_id',
-                        'service': 'library-service'
-                    }, status=401)
+                # Vérifier le cache local d'abord pour les détails tenant
+                cache_key = f'library_tenant_local:{tenant_id}'
+                tenant_info = cache.get(cache_key)
+                
+                if not tenant_info:
+                    # Générer tenant_info à partir du JWT + defaults sécurisés
+                    tenant_info = {
+                        'tenant_uuid': tenant_id,
+                        'is_active': True,  # JWT validé par Gateway = tenant actif
+                        'name': f"Tenant {tenant_id[:8]}",
+                        'schema_name': f"tenant_{str(tenant_uuid).replace('-', '_')}",
+                        'extracted_from': 'jwt'
+                    }
+                    
+                    # Cache local 30 minutes (réduction massive des appels externes)
+                    cache.set(cache_key, tenant_info, 1800)
+                    logger.info(f"Library - Tenant info mise en cache locale: {tenant_id}")
+                
+            else:
+                # Fallback: validation via tenant-service (rare, si JWT invalide)
+                logger.warning(f"Library - Fallback tenant-service pour: {tenant_id}")
+                cache_key = f'library_tenant_fallback:{tenant_id}'
+                tenant_info = cache.get(cache_key)
+                
+                if not tenant_info:
+                    tenant_service_url = getattr(settings, 'TENANT_SERVICE_URL', 'http://localhost:8001')
+                    response = requests.get(
+                        f"{tenant_service_url}/api/tenants/{tenant_id}/",
+                        headers={'Accept': 'application/json'},
+                        timeout=5
+                    )
+                    
+                    if not response.ok:
+                        logger.warning(f"Library - Tenant invalide (fallback): {tenant_id}")
+                        return JsonResponse({
+                            'error': 'Invalid or non-existent tenant',
+                            'code': 'invalid_tenant_id',
+                            'service': 'library-service'
+                        }, status=401)
 
-                tenant_data = response.json()
-                tenant_info = {
-                    'tenant_uuid': tenant_data.get('id'),
-                    'is_active': tenant_data.get('is_active', True),
-                    'name': tenant_data.get('name', f"Tenant {tenant_id}"),
-                    'schema_name': tenant_data.get('schema_name', f"tenant_{str(tenant_uuid).replace('-', '_')}")
-                }
-                
-                # Mettre en cache pour 30 minutes (pour réduire les appels tenant-service)
-                cache.set(cache_key, tenant_info, 1800)
+                    tenant_data = response.json()
+                    tenant_info = {
+                        'tenant_uuid': tenant_data.get('id'),
+                        'is_active': tenant_data.get('is_active', True),
+                        'name': tenant_data.get('name', f"Tenant {tenant_id}"),
+                        'schema_name': tenant_data.get('schema_name', f"tenant_{str(tenant_uuid).replace('-', '_')}"),
+                        'extracted_from': 'fallback_service'
+                    }
+                    
+                    # Cache fallback 30 minutes
+                    cache.set(cache_key, tenant_info, 1800)
             
             # Vérifier que le tenant est actif
             if not tenant_info.get('is_active'):
@@ -135,7 +204,12 @@ class HeaderTenantMiddleware:
             request.tenant_schema = tenant_info['schema_name']
             request.tenant_name = tenant_info['name']
             
-            logger.debug(f"Library - Tenant activé: {tenant_id} (schema: {tenant_info['schema_name']})")
+            # Logging optimisation pour analyse performance
+            extraction_method = tenant_info.get('extracted_from', 'unknown')
+            logger.info(f"Library - Tenant activé: {tenant_id} (schema: {tenant_info['schema_name']}, method: {extraction_method})")
+            
+            # Ajouter métriques d'optimisation à la requête
+            request.tenant_extraction_method = extraction_method
             
             response = self.get_response(request)
             

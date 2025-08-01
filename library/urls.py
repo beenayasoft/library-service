@@ -6,6 +6,7 @@ from .views import (
     MainOeuvreViewSet, 
     OuvrageViewSet,
     IngredientOuvrageViewSet,
+    LibraryCompositeViewSet,
     LibrarySearchViewSet
 )
 
@@ -16,6 +17,7 @@ router.register(r'fournitures', FournitureViewSet)
 router.register(r'main-oeuvre', MainOeuvreViewSet)
 router.register(r'ouvrages', OuvrageViewSet)
 router.register(r'ingredients', IngredientOuvrageViewSet)
+router.register(r'composite', LibraryCompositeViewSet, basename='library-composite')
 router.register(r'search', LibrarySearchViewSet, basename='library-search')
 
 urlpatterns = [
