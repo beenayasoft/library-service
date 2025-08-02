@@ -159,7 +159,7 @@ Traceback (most recent call last):
     )
 django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
 ERROR 2025-07-25 10:29:57,311 basehttp 31464 27700 "GET /api/categories/ HTTP/1.1" 500 198532
-ERROR 2025-07-25 10:30:01,452 middleware 31464 25268 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+ERROR 2025-07-25 10:30:01,452 middleware 31464 25268 Erreur lors de la rï¿½cupï¿½ration du tenant 123e4567-e89b-12d3-a456-426614174000: 404
 WARNING 2025-07-25 10:30:01,452 log 31464 25268 Unauthorized: /api/fournitures/
 WARNING 2025-07-25 10:30:01,453 basehttp 31464 25268 "GET /api/fournitures/ HTTP/1.1" 401 89
 INFO 2025-07-25 10:32:29,726 autoreload 31464 29820 D:\beenaya-soa\soa\services\library-service\tenant_schema\models.py changed, reloading.
@@ -268,24 +268,24 @@ Traceback (most recent call last):
     )
 django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
 ERROR 2025-07-25 10:36:48,037 basehttp 1928 5004 "GET /api/categories/ HTTP/1.1" 500 198637
-ERROR 2025-07-25 10:36:52,186 middleware 1928 30820 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+ERROR 2025-07-25 10:36:52,186 middleware 1928 30820 Erreur lors de la rï¿½cupï¿½ration du tenant 123e4567-e89b-12d3-a456-426614174000: 404
 WARNING 2025-07-25 10:36:52,186 log 1928 30820 Unauthorized: /api/fournitures/
 WARNING 2025-07-25 10:36:52,187 basehttp 1928 30820 "GET /api/fournitures/ HTTP/1.1" 401 89
 INFO 2025-07-25 10:39:02,722 autoreload 19520 28072 Watching for file changes with StatReloader
 INFO 2025-07-25 10:41:44,414 autoreload 28808 24184 Watching for file changes with StatReloader
-INFO 2025-07-25 10:44:38,350 middleware 28808 18088 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
-INFO 2025-07-25 10:44:38,458 middleware 28808 31464 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
-INFO 2025-07-25 10:44:38,715 middleware 28808 24580 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
-INFO 2025-07-25 10:44:38,727 middleware 28808 31668 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
-INFO 2025-07-25 10:44:38,734 middleware 28808 8768 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
-INFO 2025-07-25 10:44:39,098 middleware 28808 31608 Library - Création automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
-INFO 2025-07-25 10:44:39,580 middleware 28808 18088 Library - Migrations exécutées pour le tenant ETAO
-INFO 2025-07-25 10:44:39,580 middleware 28808 18088 Library - Nouveau tenant créé: ETAO (schéma: tenant_etao)
-INFO 2025-07-25 10:44:39,599 middleware 28808 31668 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
-INFO 2025-07-25 10:44:39,599 middleware 28808 8768 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
-INFO 2025-07-25 10:44:39,599 middleware 28808 24580 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
-INFO 2025-07-25 10:44:39,599 middleware 28808 31608 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
-INFO 2025-07-25 10:44:39,599 middleware 28808 31464 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b créé par un autre thread, récupération...
+INFO 2025-07-25 10:44:38,350 middleware 28808 18088 Library - Crï¿½ation automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,458 middleware 28808 31464 Library - Crï¿½ation automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,715 middleware 28808 24580 Library - Crï¿½ation automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,727 middleware 28808 31668 Library - Crï¿½ation automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:38,734 middleware 28808 8768 Library - Crï¿½ation automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:39,098 middleware 28808 31608 Library - Crï¿½ation automatique du tenant 31f96c39-bd7f-453e-a7f1-88495e70272b
+INFO 2025-07-25 10:44:39,580 middleware 28808 18088 Library - Migrations exï¿½cutï¿½es pour le tenant ETAO
+INFO 2025-07-25 10:44:39,580 middleware 28808 18088 Library - Nouveau tenant crï¿½ï¿½: ETAO (schï¿½ma: tenant_etao)
+INFO 2025-07-25 10:44:39,599 middleware 28808 31668 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b crï¿½ï¿½ par un autre thread, rï¿½cupï¿½ration...
+INFO 2025-07-25 10:44:39,599 middleware 28808 8768 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b crï¿½ï¿½ par un autre thread, rï¿½cupï¿½ration...
+INFO 2025-07-25 10:44:39,599 middleware 28808 24580 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b crï¿½ï¿½ par un autre thread, rï¿½cupï¿½ration...
+INFO 2025-07-25 10:44:39,599 middleware 28808 31608 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b crï¿½ï¿½ par un autre thread, rï¿½cupï¿½ration...
+INFO 2025-07-25 10:44:39,599 middleware 28808 31464 Library - Tenant 31f96c39-bd7f-453e-a7f1-88495e70272b crï¿½ï¿½ par un autre thread, rï¿½cupï¿½ration...
 INFO 2025-07-25 10:44:39,626 basehttp 28808 31668 "GET /api/main-oeuvre/ HTTP/1.1" 200 52
 INFO 2025-07-25 10:44:39,627 basehttp 28808 18088 "GET /api/fournitures/ HTTP/1.1" 200 52
 INFO 2025-07-25 10:44:39,627 basehttp 28808 8768 "GET /api/fournitures/ HTTP/1.1" 200 52
@@ -386,7 +386,7 @@ Traceback (most recent call last):
     )
 django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
 ERROR 2025-07-25 10:50:36,052 basehttp 28808 30740 "GET /api/categories/ HTTP/1.1" 500 191383
-ERROR 2025-07-25 10:50:40,181 middleware 28808 29596 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+ERROR 2025-07-25 10:50:40,181 middleware 28808 29596 Erreur lors de la rï¿½cupï¿½ration du tenant 123e4567-e89b-12d3-a456-426614174000: 404
 WARNING 2025-07-25 10:50:40,182 log 28808 29596 Unauthorized: /api/fournitures/
 WARNING 2025-07-25 10:50:40,182 basehttp 28808 29596 "GET /api/fournitures/ HTTP/1.1" 401 89
 INFO 2025-07-25 10:50:47,348 basehttp 28808 22260 "GET /health/ HTTP/1.1" 200 88
@@ -483,7 +483,7 @@ Traceback (most recent call last):
     )
 django.core.exceptions.FieldDoesNotExist: Categorie has no field named 'chemin_complet'
 ERROR 2025-07-25 10:50:49,440 basehttp 28808 14204 "GET /api/categories/ HTTP/1.1" 500 191383
-ERROR 2025-07-25 10:50:53,570 middleware 28808 18044 Erreur lors de la récupération du tenant 123e4567-e89b-12d3-a456-426614174000: 404
+ERROR 2025-07-25 10:50:53,570 middleware 28808 18044 Erreur lors de la rï¿½cupï¿½ration du tenant 123e4567-e89b-12d3-a456-426614174000: 404
 WARNING 2025-07-25 10:50:53,571 log 28808 18044 Unauthorized: /api/fournitures/
 WARNING 2025-07-25 10:50:53,571 basehttp 28808 18044 "GET /api/fournitures/ HTTP/1.1" 401 89
 ERROR 2025-07-25 10:51:02,560 log 28808 7060 Internal Server Error: /api/categories/
@@ -1157,8 +1157,8 @@ INFO 2025-07-26 12:47:15,420 autoreload 22056 26056 Watching for file changes wi
 INFO 2025-07-26 17:23:48,489 basehttp 22056 21400 "GET /api/ouvrages/ HTTP/1.1" 200 52
 INFO 2025-07-26 17:23:52,233 basehttp 22056 27456 "GET /api/fournitures/ HTTP/1.1" 200 853
 INFO 2025-07-28 09:45:12,772 basehttp 22056 35808 "GET /health/ HTTP/1.1" 200 88
-INFO 2025-07-28 10:48:17,938 middleware 22056 19612 Library - Création contrôlée du tenant: 8dd6f442-cd07-4993-8930-10abb2b23e7d
-INFO 2025-07-28 10:48:19,055 middleware 22056 19612 Library - Tenant créé: KEWA (schema: tenant_kewa)
+INFO 2025-07-28 10:48:17,938 middleware 22056 19612 Library - Crï¿½ation contrï¿½lï¿½e du tenant: 8dd6f442-cd07-4993-8930-10abb2b23e7d
+INFO 2025-07-28 10:48:19,055 middleware 22056 19612 Library - Tenant crï¿½ï¿½: KEWA (schema: tenant_kewa)
 INFO 2025-07-28 10:48:19,082 basehttp 22056 19612 "GET /api/ouvrages/ HTTP/1.1" 200 52
 INFO 2025-07-28 10:48:19,788 basehttp 22056 36632 "GET /api/fournitures/ HTTP/1.1" 200 52
 INFO 2025-07-28 10:48:22,444 basehttp 22056 22264 "GET /api/ouvrages/ HTTP/1.1" 200 52
@@ -1601,79 +1601,4 @@ WARNING 2025-08-01 23:30:01,859 basehttp 46412 20436 "GET /api/main-oeuvre/ HTTP
 WARNING 2025-08-01 23:30:01,859 basehttp 46412 34120 "GET /api/ouvrages/ HTTP/1.1" 400 98
 WARNING 2025-08-01 23:30:02,378 log 46412 33448 Bad Request: /api/fournitures/
 WARNING 2025-08-01 23:30:02,378 basehttp 46412 33448 "GET /api/fournitures/ HTTP/1.1" 400 98
-INFO 2025-08-02 18:01:20,523 autoreload 13100 34524 Watching for file changes with StatReloader
-WARNING 2025-08-02 18:02:25,670 log 13100 30392 Bad Request: /api/fournitures/
-WARNING 2025-08-02 18:02:25,670 log 13100 45600 Bad Request: /api/main-oeuvre/
-WARNING 2025-08-02 18:02:25,671 basehttp 13100 30392 "GET /api/fournitures/ HTTP/1.1" 400 98
-WARNING 2025-08-02 18:02:25,671 basehttp 13100 45600 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
-WARNING 2025-08-02 18:02:26,328 log 13100 47504 Bad Request: /api/ouvrages/
-WARNING 2025-08-02 18:02:26,328 basehttp 13100 47504 "GET /api/ouvrages/ HTTP/1.1" 400 98
-WARNING 2025-08-02 18:02:26,591 log 13100 41108 Bad Request: /api/fournitures/
-WARNING 2025-08-02 18:02:26,592 log 13100 21920 Bad Request: /api/main-oeuvre/
-WARNING 2025-08-02 18:02:26,592 basehttp 13100 41108 "GET /api/fournitures/ HTTP/1.1" 400 98
-WARNING 2025-08-02 18:02:26,592 basehttp 13100 21920 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
-WARNING 2025-08-02 18:02:26,805 log 13100 47032 Bad Request: /api/ouvrages/
-WARNING 2025-08-02 18:02:26,805 basehttp 13100 47032 "GET /api/ouvrages/ HTTP/1.1" 400 98
-INFO 2025-08-02 18:10:33,248 autoreload 27108 34784 D:\beenaya-soa\soa\services\library-service\library\urls.py changed, reloading.
-INFO 2025-08-02 18:11:03,781 autoreload 22868 44156 Watching for file changes with StatReloader
-INFO 2025-08-02 18:18:09,853 middleware 22868 33780 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
-INFO 2025-08-02 18:18:09,854 middleware 22868 33780 [MIDDLEWARE AUDIT] Header extraction: 0.55ms
-INFO 2025-08-02 18:18:09,854 middleware 22868 33780 [MIDDLEWARE AUDIT] JWT extraction: 0.13ms
-INFO 2025-08-02 18:18:09,854 middleware 22868 33780 [MIDDLEWARE AUDIT] Cache check (MISS): 0.17ms
-INFO 2025-08-02 18:18:09,855 middleware 22868 33780 Library - Tenant info mise en cache locale: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
-INFO 2025-08-02 18:18:10,271 middleware 22868 33780 [MIDDLEWARE AUDIT] Tenant setup: 415.95ms
-INFO 2025-08-02 18:18:10,271 middleware 22868 33780 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 417.80ms (method: jwt)
-INFO 2025-08-02 18:18:10,276 views 22868 33780 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
-INFO 2025-08-02 18:18:10,276 views 22868 33780 [LATENCY AUDIT] Paramètres parsing: 0.25ms
-INFO 2025-08-02 18:18:10,276 views 22868 33780 [LATENCY AUDIT] QuerySet preparation: 0.40ms
-INFO 2025-08-02 18:18:10,414 views 22868 33780 [LATENCY AUDIT] Fournitures query (4 items): 137.84ms
-INFO 2025-08-02 18:18:10,513 views 22868 33780 [LATENCY AUDIT] Main d'oeuvre query (3 items): 98.70ms
-INFO 2025-08-02 18:18:10,717 views 22868 33780 [LATENCY AUDIT] Ouvrages query (4 items): 203.68ms
-INFO 2025-08-02 18:18:10,743 views 22868 33780 [LATENCY AUDIT] Ingredients optimization (0 items): 26.05ms
-INFO 2025-08-02 18:18:10,744 views 22868 33780 [LATENCY AUDIT] Count queries: 0.00ms
-INFO 2025-08-02 18:18:12,345 views 22868 33780 [LATENCY AUDIT] Fournitures serialization: 1600.89ms
-INFO 2025-08-02 18:18:13,300 views 22868 33780 [LATENCY AUDIT] Main d'oeuvre serialization: 955.65ms
-INFO 2025-08-02 18:18:15,221 views 22868 33780 [LATENCY AUDIT] Ouvrages serialization: 1920.73ms
-INFO 2025-08-02 18:18:15,221 views 22868 33780 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 4945.47ms (4F + 3MO + 4O)
-INFO 2025-08-02 18:18:15,222 middleware 22868 33780 [MIDDLEWARE AUDIT] Cleanup: 0.04ms
-INFO 2025-08-02 18:18:15,222 middleware 22868 33780 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 5368.81ms
-INFO 2025-08-02 18:18:15,223 basehttp 22868 33780 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5780
-INFO 2025-08-02 18:18:15,730 middleware 22868 49184 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
-INFO 2025-08-02 18:18:15,730 middleware 22868 49184 [MIDDLEWARE AUDIT] Header extraction: 0.35ms
-INFO 2025-08-02 18:18:15,731 middleware 22868 49184 [MIDDLEWARE AUDIT] JWT extraction: 0.11ms
-INFO 2025-08-02 18:18:15,731 middleware 22868 49184 [MIDDLEWARE AUDIT] Cache check (HIT): 0.08ms
-INFO 2025-08-02 18:18:16,098 middleware 22868 49184 [MIDDLEWARE AUDIT] Tenant setup: 366.81ms
-INFO 2025-08-02 18:18:16,098 middleware 22868 49184 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 368.26ms (method: jwt)
-INFO 2025-08-02 18:18:16,099 views 22868 49184 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
-INFO 2025-08-02 18:18:16,099 views 22868 49184 [LATENCY AUDIT] Paramètres parsing: 0.16ms
-INFO 2025-08-02 18:18:16,100 views 22868 49184 [LATENCY AUDIT] QuerySet preparation: 0.40ms
-INFO 2025-08-02 18:18:16,185 views 22868 49184 [LATENCY AUDIT] Fournitures query (4 items): 85.48ms
-INFO 2025-08-02 18:18:16,273 views 22868 49184 [LATENCY AUDIT] Main d'oeuvre query (3 items): 87.44ms
-INFO 2025-08-02 18:18:16,453 views 22868 49184 [LATENCY AUDIT] Ouvrages query (4 items): 180.21ms
-INFO 2025-08-02 18:18:16,453 views 22868 49184 [LATENCY AUDIT] Ingredients optimization (0 items): 0.02ms
-INFO 2025-08-02 18:18:16,453 views 22868 49184 [LATENCY AUDIT] Count queries: 0.00ms
-INFO 2025-08-02 18:18:18,183 views 22868 49184 [LATENCY AUDIT] Fournitures serialization: 1729.68ms
-INFO 2025-08-02 18:18:19,234 views 22868 49184 [LATENCY AUDIT] Main d'oeuvre serialization: 1050.45ms
-INFO 2025-08-02 18:18:19,953 middleware 22868 49332 [MIDDLEWARE AUDIT] START - GET /api/main-oeuvre/4/
-INFO 2025-08-02 18:18:19,953 middleware 22868 49332 [MIDDLEWARE AUDIT] Header extraction: 0.28ms
-INFO 2025-08-02 18:18:19,953 middleware 22868 49332 [MIDDLEWARE AUDIT] JWT extraction: 0.06ms
-INFO 2025-08-02 18:18:19,953 middleware 22868 49332 [MIDDLEWARE AUDIT] Cache check (HIT): 0.07ms
-INFO 2025-08-02 18:18:20,317 middleware 22868 49332 [MIDDLEWARE AUDIT] Tenant setup: 363.24ms
-INFO 2025-08-02 18:18:20,317 middleware 22868 49332 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 364.37ms (method: jwt)
-INFO 2025-08-02 18:18:20,406 middleware 22868 49332 [MIDDLEWARE AUDIT] Cleanup: 0.04ms
-INFO 2025-08-02 18:18:20,406 middleware 22868 49332 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 452.85ms
-INFO 2025-08-02 18:18:20,407 basehttp 22868 49332 "GET /api/main-oeuvre/4/ HTTP/1.1" 200 384
-INFO 2025-08-02 18:18:20,895 middleware 22868 26616 [MIDDLEWARE AUDIT] START - GET /api/main-oeuvre/4/
-INFO 2025-08-02 18:18:20,896 middleware 22868 26616 [MIDDLEWARE AUDIT] Header extraction: 0.27ms
-INFO 2025-08-02 18:18:20,896 middleware 22868 26616 [MIDDLEWARE AUDIT] JWT extraction: 0.09ms
-INFO 2025-08-02 18:18:20,896 middleware 22868 26616 [MIDDLEWARE AUDIT] Cache check (HIT): 0.09ms
-INFO 2025-08-02 18:18:21,243 middleware 22868 26616 [MIDDLEWARE AUDIT] Tenant setup: 346.84ms
-INFO 2025-08-02 18:18:21,243 middleware 22868 26616 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 347.99ms (method: jwt)
-INFO 2025-08-02 18:18:21,329 middleware 22868 26616 [MIDDLEWARE AUDIT] Cleanup: 0.03ms
-INFO 2025-08-02 18:18:21,329 middleware 22868 26616 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 433.24ms
-INFO 2025-08-02 18:18:21,329 basehttp 22868 26616 "GET /api/main-oeuvre/4/ HTTP/1.1" 200 384
-INFO 2025-08-02 18:18:21,363 views 22868 49184 [LATENCY AUDIT] Ouvrages serialization: 2129.05ms
-INFO 2025-08-02 18:18:21,363 views 22868 49184 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 5264.00ms (4F + 3MO + 4O)
-INFO 2025-08-02 18:18:21,364 middleware 22868 49184 [MIDDLEWARE AUDIT] Cleanup: 0.05ms
-INFO 2025-08-02 18:18:21,364 middleware 22868 49184 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 5633.80ms
-INFO 2025-08-02 18:18:21,364 basehttp 22868 49184 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5780
+INFO 2025-08-02 19:31:45,150 autoreload 20656 49840 Watching for file changes with StatReloader
