@@ -3608,3 +3608,4 @@ INFO 2025-08-02 15:53:31,823 middleware 2544 6580 [MIDDLEWARE AUDIT] Cleanup: 0.
 INFO 2025-08-02 15:53:31,832 middleware 2544 6580 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 9173.42ms
 INFO 2025-08-02 15:53:31,840 basehttp 2544 6580 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5781
 INFO 2025-08-02 15:57:53,862 autoreload 26592 9920 Watching for file changes with StatReloader
+INFO 2025-08-02 16:33:27,150 autoreload 25256 19876 Watching for file changes with StatReloader
