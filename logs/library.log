@@ -3502,3 +3502,108 @@ INFO 2025-08-02 15:23:34,478 views 12904 24684 [LATENCY AUDIT] TOTAL COMPOSITE E
 INFO 2025-08-02 15:23:34,479 middleware 12904 24684 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
 INFO 2025-08-02 15:23:34,480 middleware 12904 24684 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 7710.40ms
 INFO 2025-08-02 15:23:34,483 basehttp 12904 24684 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5780
+INFO 2025-08-02 15:29:19,693 autoreload 21776 4976 Watching for file changes with StatReloader
+INFO 2025-08-02 15:31:58,426 middleware 21776 23384 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:31:58,427 middleware 21776 12452 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:31:58,470 middleware 21776 23384 [MIDDLEWARE AUDIT] Header extraction: 43.79ms
+INFO 2025-08-02 15:31:58,474 middleware 21776 12452 [MIDDLEWARE AUDIT] Header extraction: 46.26ms
+WARNING 2025-08-02 15:31:58,564 middleware 21776 23384 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 15:31:58,576 middleware 21776 12452 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:31:58,595 middleware 21776 23384 [MIDDLEWARE AUDIT] JWT extraction: 31.40ms
+INFO 2025-08-02 15:31:58,608 middleware 21776 12452 [MIDDLEWARE AUDIT] JWT extraction: 31.99ms
+WARNING 2025-08-02 15:31:58,618 middleware 21776 23384 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:31:58,620 middleware 21776 23384 Library - Évitement tenant-service lent, utilisation JWT: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 15:31:58,645 middleware 21776 12452 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:31:58,653 middleware 21776 23384 Library - Tenant JWT optimisé mis en cache: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:31:59,216 middleware 21776 12452 [MIDDLEWARE AUDIT] Tenant setup: 557.32ms
+INFO 2025-08-02 15:31:59,234 middleware 21776 12452 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 806.25ms (method: jwt_optimized)
+INFO 2025-08-02 15:31:59,262 middleware 21776 23384 [MIDDLEWARE AUDIT] Tenant setup: 581.66ms
+INFO 2025-08-02 15:31:59,272 middleware 21776 23384 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 846.49ms (method: jwt_optimized)
+INFO 2025-08-02 15:31:59,290 views 21776 12452 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:31:59,294 views 21776 23384 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:31:59,300 views 21776 12452 [LATENCY AUDIT] Paramètres parsing: 9.42ms
+INFO 2025-08-02 15:31:59,309 views 21776 23384 [LATENCY AUDIT] Paramètres parsing: 14.92ms
+INFO 2025-08-02 15:31:59,317 views 21776 12452 [LATENCY AUDIT] QuerySet preparation: 17.63ms
+INFO 2025-08-02 15:31:59,327 views 21776 23384 [LATENCY AUDIT] QuerySet preparation: 18.98ms
+INFO 2025-08-02 15:31:59,455 views 21776 12452 [LATENCY AUDIT] Fournitures query (4 items): 114.19ms
+INFO 2025-08-02 15:31:59,524 views 21776 23384 [LATENCY AUDIT] Fournitures query (4 items): 134.34ms
+INFO 2025-08-02 15:31:59,584 views 21776 12452 [LATENCY AUDIT] Main d'oeuvre query (3 items): 128.87ms
+INFO 2025-08-02 15:31:59,677 views 21776 23384 [LATENCY AUDIT] Main d'oeuvre query (3 items): 152.97ms
+INFO 2025-08-02 15:31:59,846 views 21776 12452 [LATENCY AUDIT] Ouvrages query (4 items): 262.15ms
+INFO 2025-08-02 15:31:59,898 views 21776 12452 [LATENCY AUDIT] Ingredients optimization (0 items): 41.70ms
+INFO 2025-08-02 15:31:59,902 views 21776 12452 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:31:59,957 views 21776 23384 [LATENCY AUDIT] Ouvrages query (4 items): 280.25ms
+INFO 2025-08-02 15:31:59,961 views 21776 23384 [LATENCY AUDIT] Ingredients optimization (0 items): 0.00ms
+INFO 2025-08-02 15:31:59,962 views 21776 23384 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:32:02,209 views 21776 12452 [LATENCY AUDIT] Fournitures serialization: 2305.64ms
+INFO 2025-08-02 15:32:02,378 views 21776 23384 [LATENCY AUDIT] Fournitures serialization: 2415.66ms
+INFO 2025-08-02 15:32:03,656 views 21776 12452 [LATENCY AUDIT] Main d'oeuvre serialization: 1446.70ms
+INFO 2025-08-02 15:32:03,902 views 21776 23384 [LATENCY AUDIT] Main d'oeuvre serialization: 1523.55ms
+INFO 2025-08-02 15:32:06,167 views 21776 12452 [LATENCY AUDIT] Ouvrages serialization: 2511.31ms
+INFO 2025-08-02 15:32:06,178 views 21776 12452 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 6887.03ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:32:06,185 middleware 21776 12452 [MIDDLEWARE AUDIT] Cleanup: 1.03ms
+INFO 2025-08-02 15:32:06,190 middleware 21776 12452 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 7757.71ms
+INFO 2025-08-02 15:32:06,211 basehttp 21776 12452 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5781
+INFO 2025-08-02 15:32:06,651 views 21776 23384 [LATENCY AUDIT] Ouvrages serialization: 2749.17ms
+INFO 2025-08-02 15:32:06,665 views 21776 23384 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 7371.72ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:32:06,669 middleware 21776 23384 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:32:06,674 middleware 21776 23384 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 8242.95ms
+INFO 2025-08-02 15:32:06,684 basehttp 21776 23384 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5783
+INFO 2025-08-02 15:47:09,275 autoreload 21776 4976 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 15:47:17,153 autoreload 5144 16348 Watching for file changes with StatReloader
+INFO 2025-08-02 15:48:32,926 autoreload 5144 16348 C:\Users\jean\Documents\projet\library-service\library\models.py changed, reloading.
+INFO 2025-08-02 15:48:38,007 autoreload 22064 25956 Watching for file changes with StatReloader
+INFO 2025-08-02 15:48:50,047 autoreload 22064 25956 C:\Users\jean\Documents\projet\library-service\library\models.py changed, reloading.
+INFO 2025-08-02 15:48:56,234 autoreload 15608 22020 Watching for file changes with StatReloader
+INFO 2025-08-02 15:49:43,206 autoreload 15608 22020 C:\Users\jean\Documents\projet\library-service\library\models.py changed, reloading.
+INFO 2025-08-02 15:49:53,935 autoreload 26500 16460 Watching for file changes with StatReloader
+INFO 2025-08-02 15:50:26,798 autoreload 26500 16460 C:\Users\jean\Documents\projet\library-service\library\models.py changed, reloading.
+INFO 2025-08-02 15:50:33,225 autoreload 2544 13396 Watching for file changes with StatReloader
+INFO 2025-08-02 15:53:22,644 middleware 2544 21000 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:53:22,650 middleware 2544 6580 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:53:22,665 middleware 2544 21000 [MIDDLEWARE AUDIT] Header extraction: 21.01ms
+INFO 2025-08-02 15:53:22,667 middleware 2544 6580 [MIDDLEWARE AUDIT] Header extraction: 17.33ms
+WARNING 2025-08-02 15:53:22,673 middleware 2544 21000 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 15:53:22,681 middleware 2544 6580 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:53:22,734 middleware 2544 21000 [MIDDLEWARE AUDIT] JWT extraction: 62.65ms
+INFO 2025-08-02 15:53:22,735 middleware 2544 6580 [MIDDLEWARE AUDIT] JWT extraction: 54.08ms
+WARNING 2025-08-02 15:53:22,736 middleware 2544 21000 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 15:53:22,737 middleware 2544 6580 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:53:22,741 middleware 2544 21000 Library - Évitement tenant-service lent, utilisation JWT: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:53:22,743 middleware 2544 6580 Library - Évitement tenant-service lent, utilisation JWT: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:53:22,751 middleware 2544 21000 Library - Tenant JWT optimisé mis en cache: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:53:22,752 middleware 2544 6580 Library - Tenant JWT optimisé mis en cache: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:53:23,362 middleware 2544 21000 [MIDDLEWARE AUDIT] Tenant setup: 585.58ms
+INFO 2025-08-02 15:53:23,364 middleware 2544 21000 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 720.26ms (method: jwt_optimized)
+INFO 2025-08-02 15:53:23,418 views 2544 21000 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:53:23,420 middleware 2544 6580 [MIDDLEWARE AUDIT] Tenant setup: 601.45ms
+INFO 2025-08-02 15:53:23,427 views 2544 21000 [LATENCY AUDIT] Paramètres parsing: 9.58ms
+INFO 2025-08-02 15:53:23,430 middleware 2544 6580 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 778.90ms (method: jwt_optimized)
+INFO 2025-08-02 15:53:23,435 views 2544 21000 [LATENCY AUDIT] QuerySet preparation: 8.13ms
+INFO 2025-08-02 15:53:23,440 views 2544 6580 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:53:23,463 views 2544 6580 [LATENCY AUDIT] Paramètres parsing: 23.20ms
+INFO 2025-08-02 15:53:23,466 views 2544 6580 [LATENCY AUDIT] QuerySet preparation: 2.56ms
+INFO 2025-08-02 15:53:23,592 views 2544 21000 [LATENCY AUDIT] Fournitures query (4 items): 143.93ms
+INFO 2025-08-02 15:53:23,623 views 2544 6580 [LATENCY AUDIT] Fournitures query (4 items): 155.18ms
+INFO 2025-08-02 15:53:23,767 views 2544 21000 [LATENCY AUDIT] Main d'oeuvre query (3 items): 174.89ms
+INFO 2025-08-02 15:53:23,837 views 2544 6580 [LATENCY AUDIT] Main d'oeuvre query (3 items): 213.87ms
+INFO 2025-08-02 15:53:24,066 views 2544 21000 [LATENCY AUDIT] Ouvrages query (4 items): 299.47ms
+INFO 2025-08-02 15:53:24,097 views 2544 21000 [LATENCY AUDIT] Ingredients optimization (0 items): 11.58ms
+INFO 2025-08-02 15:53:24,106 views 2544 21000 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:53:24,158 views 2544 6580 [LATENCY AUDIT] Ouvrages query (4 items): 320.65ms
+INFO 2025-08-02 15:53:24,161 views 2544 6580 [LATENCY AUDIT] Ingredients optimization (0 items): 0.00ms
+INFO 2025-08-02 15:53:24,175 views 2544 6580 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:53:26,322 views 2544 21000 [LATENCY AUDIT] Fournitures serialization: 2210.32ms
+INFO 2025-08-02 15:53:26,878 views 2544 6580 [LATENCY AUDIT] Fournitures serialization: 2677.62ms
+INFO 2025-08-02 15:53:27,665 views 2544 21000 [LATENCY AUDIT] Main d'oeuvre serialization: 1343.27ms
+INFO 2025-08-02 15:53:28,521 views 2544 6580 [LATENCY AUDIT] Main d'oeuvre serialization: 1643.09ms
+INFO 2025-08-02 15:53:30,300 views 2544 21000 [LATENCY AUDIT] Ouvrages serialization: 2634.38ms
+INFO 2025-08-02 15:53:30,477 views 2544 21000 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 7059.55ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:53:30,570 middleware 2544 21000 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:53:30,611 middleware 2544 21000 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 7926.46ms
+INFO 2025-08-02 15:53:30,750 basehttp 2544 21000 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5782
+INFO 2025-08-02 15:53:31,816 views 2544 6580 [LATENCY AUDIT] Ouvrages serialization: 3293.80ms
+INFO 2025-08-02 15:53:31,818 views 2544 6580 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 8378.07ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:53:31,823 middleware 2544 6580 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:53:31,832 middleware 2544 6580 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 9173.42ms
+INFO 2025-08-02 15:53:31,840 basehttp 2544 6580 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5781

@@ -393,7 +393,8 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
             
             # OPTIMISATION N+1: QuerySet avec prefetch_related pour ingredients
             ouvrages_qs = Ouvrage.objects.select_related('categorie').prefetch_related(
-                'ingredients__element_type'  # Précharge les element_type des ingredients
+                'ingredients',  # Précharge les ingredients FIRST
+                'ingredients__element_type'  # Puis les element_type des ingredients
             ).only(
                 'id', 'nom', 'unite', 'categorie__id', 'categorie__nom', 
                 'prix_recommande', 'code', 'type', 'complexity', 'marge', 'efficiency'

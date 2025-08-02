@@ -384,9 +384,18 @@ class Ouvrage(models.Model):
     def debourse_sec(self):
         """
         Calcule le déboursé sec (coût total) de l'ouvrage en fonction des ingrédients et quantités.
+        OPTIMISÉ: Utilise les données préchargées pour éviter N+1 queries.
         """
+        # Vérifier si les ingrédients sont préchargés
+        if hasattr(self, '_prefetched_objects_cache') and 'ingredients' in self._prefetched_objects_cache:
+            # Utiliser les données préchargées (0 requête DB)
+            ingredients = self._prefetched_objects_cache['ingredients']
+        else:
+            # Fallback: comportement original (1 requête DB)
+            ingredients = self.ingredients.all()
+        
         total = 0
-        for ingredient in self.ingredients.all():
+        for ingredient in ingredients:
             total += ingredient.cout_total
         return total
     
@@ -412,18 +421,40 @@ class Ouvrage(models.Model):
     
     @property
     def laborCost(self):
-        """Calcule le coût total de la main d'œuvre"""
+        """
+        Calcule le coût total de la main d'œuvre.
+        OPTIMISÉ: Utilise les données préchargées pour éviter N+1 queries.
+        """
+        # Vérifier si les ingrédients sont préchargés
+        if hasattr(self, '_prefetched_objects_cache') and 'ingredients' in self._prefetched_objects_cache:
+            # Utiliser les données préchargées (0 requête DB)
+            ingredients = self._prefetched_objects_cache['ingredients']
+        else:
+            # Fallback: comportement original (1 requête DB)
+            ingredients = self.ingredients.all()
+        
         total = 0
-        for ingredient in self.ingredients.all():
+        for ingredient in ingredients:
             if ingredient.element_type.model == 'mainoeuvre':
                 total += ingredient.cout_total
         return total
     
     @property
     def materialCost(self):
-        """Calcule le coût total des matériaux"""
+        """
+        Calcule le coût total des matériaux.
+        OPTIMISÉ: Utilise les données préchargées pour éviter N+1 queries.
+        """
+        # Vérifier si les ingrédients sont préchargés
+        if hasattr(self, '_prefetched_objects_cache') and 'ingredients' in self._prefetched_objects_cache:
+            # Utiliser les données préchargées (0 requête DB)
+            ingredients = self._prefetched_objects_cache['ingredients']
+        else:
+            # Fallback: comportement original (1 requête DB)
+            ingredients = self.ingredients.all()
+        
         total = 0
-        for ingredient in self.ingredients.all():
+        for ingredient in ingredients:
             if ingredient.element_type.model == 'fourniture':
                 total += ingredient.cout_total
         return total
@@ -503,20 +534,28 @@ class IngredientOuvrage(models.Model):
     def cout_total(self):
         """
         Calcule le coût total de cet ingrédient (quantité × prix unitaire).
+        OPTIMISÉ: Utilise les données préchargées pour éviter N+1 queries.
         """
-        base_cost = 0
-        if self.element_type.model == 'fourniture':
-            try:
-                fourniture = Fourniture.objects.get(id=self.element_id)
-                base_cost = self.quantite * fourniture.prix_achat_ht
-            except Fourniture.DoesNotExist:
-                return 0
-        elif self.element_type.model == 'mainoeuvre':
-            try:
-                main_oeuvre = MainOeuvre.objects.get(id=self.element_id)
-                base_cost = self.quantite * main_oeuvre.cout_horaire
-            except MainOeuvre.DoesNotExist:
-                return 0
+        # Vérifier si les données d'élément sont préchargées
+        if hasattr(self, '_prefetched_element_data'):
+            element_data = self._prefetched_element_data
+            prix_unitaire = element_data.get('prix_achat_ht') or element_data.get('cout_horaire', 0)
+            base_cost = self.quantite * prix_unitaire
+        else:
+            # Fallback: comportement original avec requêtes DB
+            base_cost = 0
+            if self.element_type.model == 'fourniture':
+                try:
+                    fourniture = Fourniture.objects.get(id=self.element_id)
+                    base_cost = self.quantite * fourniture.prix_achat_ht
+                except Fourniture.DoesNotExist:
+                    return 0
+            elif self.element_type.model == 'mainoeuvre':
+                try:
+                    main_oeuvre = MainOeuvre.objects.get(id=self.element_id)
+                    base_cost = self.quantite * main_oeuvre.cout_horaire
+                except MainOeuvre.DoesNotExist:
+                    return 0
         
         # Appliquer la majoration pour pertes si applicable
         if self.waste_allowance > 0:
