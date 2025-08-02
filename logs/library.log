@@ -3017,3 +3017,488 @@ INFO 2025-08-01 14:52:02,966 views 8232 1288 Library - Endpoint composite: 3F + 
 INFO 2025-08-01 14:52:03,009 basehttp 8232 1288 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
 INFO 2025-08-01 14:52:03,555 views 8232 23260 Library - Endpoint composite: 3F + 3MO + 4O
 INFO 2025-08-01 14:52:03,558 basehttp 8232 23260 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:05:52,073 autoreload 22180 14668 Watching for file changes with StatReloader
+ERROR 2025-08-01 15:13:18,170 middleware 22180 26552 Library - Erreur extraction JWT: module 'jwt' has no attribute 'DecodeError'
+ERROR 2025-08-01 15:13:18,175 middleware 22180 15292 Library - Erreur extraction JWT: module 'jwt' has no attribute 'DecodeError'
+WARNING 2025-08-01 15:13:18,180 middleware 22180 26552 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 15:13:18,181 middleware 22180 15292 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:13:24,452 middleware 22180 26552 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:13:24,454 middleware 22180 15292 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:13:29,496 views 22180 26552 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:13:29,502 basehttp 22180 26552 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:13:29,570 views 22180 15292 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:13:29,575 basehttp 22180 15292 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:21:40,196 autoreload 22180 14668 C:\Users\jean\Documents\projet\library-service\library_service\settings.py changed, reloading.
+INFO 2025-08-01 15:21:47,547 autoreload 26344 19724 Watching for file changes with StatReloader
+INFO 2025-08-01 15:22:07,719 autoreload 26344 19724 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-01 15:22:14,162 autoreload 9660 22220 Watching for file changes with StatReloader
+INFO 2025-08-01 15:22:31,679 autoreload 9660 22220 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-01 15:22:35,628 autoreload 24952 2772 Watching for file changes with StatReloader
+WARNING 2025-08-01 15:25:51,815 middleware 24952 21384 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:25:51,817 middleware 24952 20120 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:25:51,819 middleware 24952 21384 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 15:25:51,820 middleware 24952 20120 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:25:57,560 middleware 24952 21384 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:25:57,688 middleware 24952 20120 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:26:02,588 views 24952 21384 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:26:02,593 basehttp 24952 21384 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:26:02,629 views 24952 20120 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:26:02,634 basehttp 24952 20120 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 15:28:53,480 middleware 24952 25784 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:28:53,484 middleware 24952 25784 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 15:28:53,746 middleware 24952 25148 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:28:53,756 middleware 24952 25148 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:28:53,991 middleware 24952 25784 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:28:54,198 middleware 24952 25148 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:28:59,193 views 24952 25784 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:28:59,197 basehttp 24952 25784 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:28:59,781 views 24952 25148 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:28:59,797 basehttp 24952 25148 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 15:40:57,655 middleware 24952 16588 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:40:57,669 middleware 24952 16588 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:40:58,242 middleware 24952 16588 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:41:03,655 views 24952 16588 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:41:03,687 basehttp 24952 16588 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 15:41:05,787 middleware 24952 13216 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:41:05,787 middleware 24952 13216 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:41:06,171 middleware 24952 13216 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:41:10,597 views 24952 13216 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:41:10,601 basehttp 24952 13216 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 15:47:10,493 middleware 24952 6264 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:47:10,495 middleware 24952 9092 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:47:10,497 middleware 24952 6264 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 15:47:10,498 middleware 24952 9092 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:47:10,976 middleware 24952 6264 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:47:10,987 middleware 24952 9092 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:47:16,144 views 24952 6264 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:47:16,150 basehttp 24952 6264 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:47:16,436 views 24952 9092 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:47:16,460 basehttp 24952 9092 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 15:50:03,999 middleware 24952 17552 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:50:04,002 middleware 24952 23076 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:50:04,011 middleware 24952 17552 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 15:50:04,014 middleware 24952 23076 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:50:04,448 middleware 24952 17552 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:50:04,501 middleware 24952 23076 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:50:04,649 basehttp 24952 17552 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 362
+INFO 2025-08-01 15:50:04,669 basehttp 24952 23076 "GET /api/main-oeuvre/1/ HTTP/1.1" 200 362
+WARNING 2025-08-01 15:54:23,702 middleware 24952 21080 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:54:23,709 middleware 24952 21080 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 15:54:23,714 middleware 24952 18392 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 15:54:23,730 middleware 24952 18392 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 15:54:24,243 middleware 24952 21080 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:54:24,330 middleware 24952 18392 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 15:54:29,115 views 24952 21080 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:54:29,124 basehttp 24952 21080 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 15:54:31,067 views 24952 18392 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 15:54:31,070 basehttp 24952 18392 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 16:01:32,756 middleware 24952 14564 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:01:32,758 middleware 24952 23028 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:01:32,759 middleware 24952 14564 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:01:32,760 middleware 24952 23028 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 16:01:40,876 middleware 24952 14564 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:01:41,049 middleware 24952 23028 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:01:45,988 views 24952 23028 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 16:01:45,996 basehttp 24952 23028 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 16:01:46,037 views 24952 14564 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 16:01:46,051 basehttp 24952 14564 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 16:50:34,755 middleware 24952 24568 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:34,762 middleware 24952 18636 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:34,772 middleware 24952 24568 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:50:34,774 middleware 24952 18636 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 16:50:41,334 middleware 24952 18636 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:42,146 middleware 24952 24568 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:46,527 views 24952 18636 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 16:50:46,535 basehttp 24952 18636 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 16:50:47,516 views 24952 24568 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 16:50:47,530 basehttp 24952 24568 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 16:50:56,766 middleware 24952 19532 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:56,770 middleware 24952 7716 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:56,777 middleware 24952 19532 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:50:56,784 middleware 24952 7716 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:50:56,805 middleware 24952 24368 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:56,847 middleware 24952 24368 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:50:56,855 middleware 24952 9732 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:56,876 middleware 24952 9732 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:50:57,017 middleware 24952 10672 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:57,029 middleware 24952 10672 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:50:57,066 middleware 24952 16664 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:50:57,069 middleware 24952 16664 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 16:50:57,273 middleware 24952 7716 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:57,319 middleware 24952 24368 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:57,412 middleware 24952 19532 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:57,417 middleware 24952 9732 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:57,499 middleware 24952 10672 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:57,552 middleware 24952 16664 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:50:58,899 basehttp 24952 7716 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-01 16:50:59,077 basehttp 24952 10672 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-01 16:50:59,951 basehttp 24952 16664 "GET /api/fournitures/ HTTP/1.1" 200 1405
+INFO 2025-08-01 16:51:00,041 basehttp 24952 19532 "GET /api/fournitures/ HTTP/1.1" 200 1405
+INFO 2025-08-01 16:51:01,817 basehttp 24952 24368 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+INFO 2025-08-01 16:51:02,433 basehttp 24952 9732 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+WARNING 2025-08-01 16:51:07,902 middleware 24952 18684 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:51:07,903 middleware 24952 18684 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:51:07,907 middleware 24952 19600 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:51:07,909 middleware 24952 372 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:51:07,910 middleware 24952 16680 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:51:07,911 middleware 24952 19600 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:51:07,911 middleware 24952 372 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:51:07,912 middleware 24952 16680 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:51:08,158 middleware 24952 5540 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:51:08,160 middleware 24952 25616 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:51:08,161 middleware 24952 5540 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:51:08,161 middleware 24952 25616 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 16:51:08,289 middleware 24952 16680 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:51:08,295 middleware 24952 372 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:51:08,326 middleware 24952 18684 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:51:08,351 middleware 24952 19600 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:51:08,570 middleware 24952 5540 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:51:08,603 middleware 24952 25616 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:51:09,734 basehttp 24952 372 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-01 16:51:10,215 basehttp 24952 16680 "GET /api/fournitures/ HTTP/1.1" 200 1405
+INFO 2025-08-01 16:51:10,316 basehttp 24952 25616 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-01 16:51:10,445 basehttp 24952 18684 "GET /api/fournitures/ HTTP/1.1" 200 1405
+INFO 2025-08-01 16:51:13,150 basehttp 24952 19600 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+INFO 2025-08-01 16:51:13,324 basehttp 24952 5540 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+WARNING 2025-08-01 16:58:22,631 middleware 24952 13520 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:58:22,632 middleware 24952 19964 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 16:58:22,633 middleware 24952 13520 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 16:58:22,634 middleware 24952 19964 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 16:58:23,070 middleware 24952 19964 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:58:23,112 middleware 24952 13520 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 16:58:27,835 views 24952 19964 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 16:58:27,841 basehttp 24952 19964 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 16:58:28,530 views 24952 13520 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 16:58:28,534 basehttp 24952 13520 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 17:09:58,014 middleware 24952 2864 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:09:58,020 middleware 24952 2328 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:09:58,043 middleware 24952 2864 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:09:58,050 middleware 24952 2328 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 17:09:58,839 middleware 24952 2864 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:09:58,863 middleware 24952 2328 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:04,381 views 24952 2864 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 17:10:04,406 basehttp 24952 2864 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-01 17:10:04,706 views 24952 2328 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-01 17:10:04,817 basehttp 24952 2328 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-01 17:10:18,069 middleware 24952 23444 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:18,079 middleware 24952 23444 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:10:18,082 middleware 24952 22620 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:18,104 middleware 24952 22620 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:10:18,131 middleware 24952 5816 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:18,162 middleware 24952 5816 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 17:10:18,612 middleware 24952 23444 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:18,613 middleware 24952 22620 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:18,647 middleware 24952 5816 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:20,696 basehttp 24952 22620 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-01 17:10:21,144 basehttp 24952 23444 "GET /api/fournitures/ HTTP/1.1" 200 1405
+INFO 2025-08-01 17:10:24,134 basehttp 24952 5816 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+WARNING 2025-08-01 17:10:33,426 middleware 24952 23824 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:33,429 middleware 24952 10600 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:33,430 middleware 24952 23824 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:10:33,430 middleware 24952 10600 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:10:33,671 middleware 24952 316 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:33,675 middleware 24952 22012 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:33,676 middleware 24952 316 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:10:33,679 middleware 24952 24336 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:10:33,680 middleware 24952 22012 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:10:33,694 middleware 24952 24336 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 17:10:33,862 middleware 24952 10600 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:33,942 middleware 24952 23824 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:33,986 basehttp 24952 10600 "GET /api/main-oeuvre/4/ HTTP/1.1" 200 384
+INFO 2025-08-01 17:10:34,113 middleware 24952 316 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:34,136 basehttp 24952 23824 "GET /api/main-oeuvre/4/ HTTP/1.1" 200 384
+INFO 2025-08-01 17:10:34,142 middleware 24952 24336 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:34,163 middleware 24952 22012 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-01 17:10:35,913 basehttp 24952 22012 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-01 17:10:36,324 basehttp 24952 24336 "GET /api/fournitures/ HTTP/1.1" 200 1405
+INFO 2025-08-01 17:10:38,810 basehttp 24952 316 "GET /api/ouvrages/ HTTP/1.1" 200 2196
+WARNING 2025-08-01 17:47:02,857 middleware 24952 24140 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:47:02,862 middleware 24952 25944 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:47:02,863 middleware 24952 26472 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:47:02,864 middleware 24952 23388 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:47:02,963 middleware 24952 24140 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:47:03,001 middleware 24952 25944 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:47:03,004 middleware 24952 23880 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:47:03,033 middleware 24952 26472 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:47:03,044 middleware 24952 23388 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:47:03,157 middleware 24952 26076 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-01 17:47:03,246 middleware 24952 23880 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-01 17:47:03,362 middleware 24952 26076 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-01 17:47:12,450 middleware 24952 24140 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+ERROR 2025-08-01 17:47:13,216 middleware 24952 26472 Library - Erreur de connexion au service tenant: HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=5)
+ERROR 2025-08-01 17:47:15,537 middleware 24952 23880 Library - Erreur de connexion au service tenant: HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=5)
+ERROR 2025-08-01 17:47:15,539 log 24952 26472 Service Unavailable: /api/main-oeuvre/
+ERROR 2025-08-01 17:47:15,540 middleware 24952 25944 Library - Erreur de connexion au service tenant: HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=5)
+ERROR 2025-08-01 17:47:15,545 basehttp 24952 26472 "GET /api/main-oeuvre/ HTTP/1.1" 503 101
+ERROR 2025-08-01 17:47:15,546 middleware 24952 26076 Library - Erreur de connexion au service tenant: HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=5)
+INFO 2025-08-01 17:47:15,653 middleware 24952 23388 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+ERROR 2025-08-01 17:47:15,712 log 24952 23880 Service Unavailable: /api/main-oeuvre/
+ERROR 2025-08-01 17:47:15,717 basehttp 24952 23880 "GET /api/main-oeuvre/ HTTP/1.1" 503 101
+ERROR 2025-08-01 17:47:15,850 log 24952 25944 Service Unavailable: /api/fournitures/
+ERROR 2025-08-01 17:47:15,853 basehttp 24952 25944 "GET /api/fournitures/ HTTP/1.1" 503 101
+ERROR 2025-08-01 17:47:15,874 log 24952 26076 Service Unavailable: /api/ouvrages/
+ERROR 2025-08-01 17:47:15,878 basehttp 24952 26076 "GET /api/ouvrages/ HTTP/1.1" 503 101
+INFO 2025-08-01 17:47:18,529 basehttp 24952 23388 - Broken pipe from ('127.0.0.1', 55154)
+INFO 2025-08-01 17:47:20,698 basehttp 24952 24140 - Broken pipe from ('127.0.0.1', 55156)
+INFO 2025-08-02 11:54:29,004 autoreload 15084 17048 Watching for file changes with StatReloader
+INFO 2025-08-02 11:58:10,780 autoreload 20896 4940 Watching for file changes with StatReloader
+WARNING 2025-08-02 12:09:41,195 middleware 20896 19636 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:09:41,202 middleware 20896 5080 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:09:41,207 middleware 20896 19636 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 12:09:41,207 middleware 20896 5080 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:09:47,647 middleware 20896 5080 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:09:48,053 middleware 20896 19636 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:09:53,114 views 20896 5080 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-02 12:09:53,122 basehttp 20896 5080 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+INFO 2025-08-02 12:09:54,069 views 20896 19636 Library - Endpoint composite: 3F + 3MO + 4O
+INFO 2025-08-02 12:09:54,073 basehttp 20896 19636 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5100
+WARNING 2025-08-02 12:34:06,536 middleware 20896 23800 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:34:06,578 middleware 20896 23800 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:34:07,500 middleware 20896 23800 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:34:08,266 mixins 20896 23800 Library - Action: create, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-08-02 12:34:08,627 basehttp 20896 23800 "POST /api/fournitures/ HTTP/1.1" 201 472
+WARNING 2025-08-02 12:34:16,368 middleware 20896 19912 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:34:16,482 middleware 20896 19912 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:34:17,050 middleware 20896 19912 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:34:17,087 mixins 20896 19912 Library - Action: create, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-08-02 12:34:17,207 basehttp 20896 19912 "POST /api/fournitures/ HTTP/1.1" 201 472
+WARNING 2025-08-02 12:34:24,913 middleware 20896 21796 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:34:24,945 middleware 20896 21796 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 12:34:24,964 middleware 20896 2924 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:34:25,014 middleware 20896 2924 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:34:25,452 middleware 20896 21796 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:34:25,572 middleware 20896 2924 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:34:25,738 basehttp 20896 21796 "GET /api/fournitures/6/ HTTP/1.1" 200 476
+INFO 2025-08-02 12:34:25,739 basehttp 20896 2924 "GET /api/fournitures/6/ HTTP/1.1" 200 476
+WARNING 2025-08-02 12:37:36,913 middleware 20896 10940 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:37:36,915 middleware 20896 10940 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:37:37,389 middleware 20896 10940 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:37:37,514 mixins 20896 10940 Library - Action: update, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-08-02 12:37:37,632 basehttp 20896 10940 "PATCH /api/fournitures/6/ HTTP/1.1" 200 462
+WARNING 2025-08-02 12:37:45,786 middleware 20896 10780 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:37:45,787 middleware 20896 10780 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:37:46,262 middleware 20896 10780 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:37:46,382 mixins 20896 10780 Library - Action: delete, User: elvislex@live.fr, Tenant: ETAO
+INFO 2025-08-02 12:37:46,609 basehttp 20896 10780 "DELETE /api/fournitures/6/ HTTP/1.1" 204 0
+WARNING 2025-08-02 12:37:51,091 middleware 20896 13268 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:37:51,093 middleware 20896 3316 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 12:37:51,094 middleware 20896 13268 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 12:37:51,094 middleware 20896 3316 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 12:37:51,574 middleware 20896 13268 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:37:51,601 middleware 20896 3316 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 12:37:58,178 views 20896 13268 Library - Endpoint composite: 4F + 3MO + 4O
+INFO 2025-08-02 12:37:58,188 basehttp 20896 13268 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5573
+INFO 2025-08-02 12:37:58,456 views 20896 3316 Library - Endpoint composite: 4F + 3MO + 4O
+INFO 2025-08-02 12:37:58,466 basehttp 20896 3316 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5573
+WARNING 2025-08-02 13:07:31,221 middleware 20896 10944 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:07:31,228 middleware 20896 19756 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:07:31,231 middleware 20896 24324 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:07:31,236 middleware 20896 18216 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:07:31,239 middleware 20896 10944 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 13:07:31,240 middleware 20896 19756 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 13:07:31,241 middleware 20896 24324 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 13:07:31,246 middleware 20896 18216 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 13:07:31,293 middleware 20896 22952 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:07:31,387 middleware 20896 14744 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:07:31,388 middleware 20896 22952 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 13:07:31,395 middleware 20896 14744 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 13:07:40,260 middleware 20896 24324 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 13:07:40,270 middleware 20896 18216 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 13:07:41,377 middleware 20896 14744 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+ERROR 2025-08-02 13:07:41,434 middleware 20896 10944 Library - Erreur de connexion au service tenant: HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=5)
+ERROR 2025-08-02 13:07:41,483 middleware 20896 22952 Library - Erreur de connexion au service tenant: HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=5)
+INFO 2025-08-02 13:07:41,513 middleware 20896 19756 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+ERROR 2025-08-02 13:07:41,528 log 20896 10944 Service Unavailable: /api/fournitures/
+ERROR 2025-08-02 13:07:41,532 basehttp 20896 10944 "GET /api/fournitures/ HTTP/1.1" 503 101
+ERROR 2025-08-02 13:07:41,639 log 20896 22952 Service Unavailable: /api/ouvrages/
+ERROR 2025-08-02 13:07:41,641 basehttp 20896 22952 "GET /api/ouvrages/ HTTP/1.1" 503 101
+INFO 2025-08-02 13:07:42,763 basehttp 20896 24324 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-02 13:07:43,523 basehttp 20896 19756 "GET /api/main-oeuvre/ HTTP/1.1" 200 1172
+INFO 2025-08-02 13:07:44,279 basehttp 20896 18216 "GET /api/fournitures/ HTTP/1.1" 200 1878
+INFO 2025-08-02 13:07:47,387 basehttp 20896 14744 - Broken pipe from ('127.0.0.1', 60902)
+WARNING 2025-08-02 13:15:14,264 middleware 20896 9432 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:15:14,269 middleware 20896 11040 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 13:15:14,279 middleware 20896 9432 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 13:15:14,279 middleware 20896 11040 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 13:15:14,934 middleware 20896 9432 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 13:15:14,961 middleware 20896 11040 Library - Tenant activé: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f (schema: tenant_etao, method: fallback_service)
+INFO 2025-08-02 13:15:21,159 views 20896 9432 Library - Endpoint composite: 4F + 3MO + 4O
+INFO 2025-08-02 13:15:21,190 basehttp 20896 9432 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5573
+INFO 2025-08-02 13:15:21,970 views 20896 11040 Library - Endpoint composite: 4F + 3MO + 4O
+INFO 2025-08-02 13:15:21,977 basehttp 20896 11040 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5573
+INFO 2025-08-02 14:33:37,025 basehttp 20896 20296 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-08-02 14:36:49,466 basehttp 20896 6236 "OPTIONS /health/ HTTP/1.1" 200 0
+INFO 2025-08-02 14:38:01,655 basehttp 20896 6236 "OPTIONS /health/ HTTP/1.1" 200 0
+INFO 2025-08-02 14:38:01,663 basehttp 20896 6236 "GET /health/ HTTP/1.1" 200 88
+INFO 2025-08-02 14:46:31,170 autoreload 20896 4940 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 14:46:39,618 autoreload 9092 24444 Watching for file changes with StatReloader
+INFO 2025-08-02 14:46:50,780 autoreload 9092 24444 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 14:46:56,621 autoreload 25828 5616 Watching for file changes with StatReloader
+INFO 2025-08-02 14:47:18,073 autoreload 25828 5616 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 14:47:22,380 autoreload 5008 23456 Watching for file changes with StatReloader
+INFO 2025-08-02 14:47:40,838 autoreload 5008 23456 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 14:47:45,312 autoreload 7840 26160 Watching for file changes with StatReloader
+INFO 2025-08-02 14:48:14,974 autoreload 7840 26160 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 14:48:20,697 autoreload 25952 20184 Watching for file changes with StatReloader
+INFO 2025-08-02 14:48:33,440 autoreload 25952 20184 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 14:48:39,084 autoreload 26172 16280 Watching for file changes with StatReloader
+INFO 2025-08-02 14:48:54,783 autoreload 26172 16280 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 14:49:00,042 autoreload 13608 10676 Watching for file changes with StatReloader
+WARNING 2025-08-02 14:54:28,811 middleware 13608 14732 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 14:54:28,850 middleware 13608 20112 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 14:54:28,892 middleware 13608 14732 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 14:54:28,922 middleware 13608 20112 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 14:54:42,343 basehttp 13608 20112 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5783
+INFO 2025-08-02 14:54:42,939 basehttp 13608 14732 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5784
+INFO 2025-08-02 15:01:59,093 autoreload 13608 10676 C:\Users\jean\Documents\projet\library-service\library\serializers.py changed, reloading.
+INFO 2025-08-02 15:02:06,842 autoreload 6076 23836 Watching for file changes with StatReloader
+INFO 2025-08-02 15:03:05,246 autoreload 6076 23836 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 15:03:09,705 autoreload 25800 20288 Watching for file changes with StatReloader
+INFO 2025-08-02 15:04:11,493 autoreload 25800 20288 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 15:04:18,657 autoreload 3912 16720 Watching for file changes with StatReloader
+INFO 2025-08-02 15:04:42,380 autoreload 3912 16720 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 15:04:48,340 autoreload 14712 17460 Watching for file changes with StatReloader
+INFO 2025-08-02 15:05:43,335 autoreload 14712 17460 C:\Users\jean\Documents\projet\library-service\library\views.py changed, reloading.
+INFO 2025-08-02 15:05:49,935 autoreload 25008 25280 Watching for file changes with StatReloader
+INFO 2025-08-02 15:06:06,204 autoreload 25008 25280 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 15:06:11,512 autoreload 21472 25168 Watching for file changes with StatReloader
+INFO 2025-08-02 15:13:17,200 autoreload 21472 25168 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 15:13:24,210 autoreload 2432 9468 Watching for file changes with StatReloader
+INFO 2025-08-02 15:13:36,139 autoreload 2432 9468 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 15:13:43,024 autoreload 12888 3172 Watching for file changes with StatReloader
+INFO 2025-08-02 15:13:55,052 autoreload 12888 3172 C:\Users\jean\Documents\projet\library-service\library\middleware.py changed, reloading.
+INFO 2025-08-02 15:14:01,342 autoreload 12904 21112 Watching for file changes with StatReloader
+INFO 2025-08-02 15:18:51,910 middleware 12904 23612 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:18:51,916 middleware 12904 13304 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:18:51,936 middleware 12904 23612 [MIDDLEWARE AUDIT] Header extraction: 24.19ms
+INFO 2025-08-02 15:18:51,940 middleware 12904 13304 [MIDDLEWARE AUDIT] Header extraction: 24.21ms
+WARNING 2025-08-02 15:18:52,070 middleware 12904 23612 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 15:18:52,098 middleware 12904 13304 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:18:52,106 middleware 12904 23612 [MIDDLEWARE AUDIT] JWT extraction: 36.62ms
+INFO 2025-08-02 15:18:52,108 middleware 12904 13304 [MIDDLEWARE AUDIT] JWT extraction: 9.93ms
+WARNING 2025-08-02 15:18:52,111 middleware 12904 13304 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 15:18:52,112 middleware 12904 23612 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:18:52,115 middleware 12904 13304 Library - Évitement tenant-service lent, utilisation JWT: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:18:52,118 middleware 12904 23612 Library - Évitement tenant-service lent, utilisation JWT: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:18:52,125 middleware 12904 13304 Library - Tenant JWT optimisé mis en cache: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:18:52,128 middleware 12904 23612 Library - Tenant JWT optimisé mis en cache: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:18:52,694 middleware 12904 13304 [MIDDLEWARE AUDIT] Tenant setup: 564.80ms
+INFO 2025-08-02 15:18:52,695 middleware 12904 23612 [MIDDLEWARE AUDIT] Tenant setup: 560.66ms
+INFO 2025-08-02 15:18:52,761 middleware 12904 13304 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 844.42ms (method: jwt_optimized)
+INFO 2025-08-02 15:18:52,816 middleware 12904 23612 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 904.75ms (method: jwt_optimized)
+INFO 2025-08-02 15:18:52,888 views 12904 13304 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:18:52,891 views 12904 23612 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:18:52,892 views 12904 13304 [LATENCY AUDIT] Paramètres parsing: 4.14ms
+INFO 2025-08-02 15:18:52,900 views 12904 23612 [LATENCY AUDIT] Paramètres parsing: 9.16ms
+INFO 2025-08-02 15:18:52,917 views 12904 13304 [LATENCY AUDIT] QuerySet preparation: 24.30ms
+INFO 2025-08-02 15:18:53,099 views 12904 23612 [LATENCY AUDIT] QuerySet preparation: 198.60ms
+INFO 2025-08-02 15:18:53,294 views 12904 13304 [LATENCY AUDIT] Fournitures query (4 items): 167.11ms
+INFO 2025-08-02 15:18:53,302 views 12904 23612 [LATENCY AUDIT] Fournitures query (4 items): 161.86ms
+INFO 2025-08-02 15:18:53,418 views 12904 13304 [LATENCY AUDIT] Main d'oeuvre query (3 items): 125.24ms
+INFO 2025-08-02 15:18:53,423 views 12904 23612 [LATENCY AUDIT] Main d'oeuvre query (3 items): 120.91ms
+INFO 2025-08-02 15:18:53,727 views 12904 13304 [LATENCY AUDIT] Ouvrages query (4 items): 308.34ms
+INFO 2025-08-02 15:18:53,730 views 12904 23612 [LATENCY AUDIT] Ouvrages query (4 items): 306.31ms
+INFO 2025-08-02 15:18:53,758 views 12904 13304 [LATENCY AUDIT] Ingredients optimization (0 items): 26.77ms
+INFO 2025-08-02 15:18:53,761 views 12904 23612 [LATENCY AUDIT] Ingredients optimization (0 items): 28.35ms
+INFO 2025-08-02 15:18:53,763 views 12904 13304 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:18:53,767 views 12904 23612 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:18:56,146 views 12904 13304 [LATENCY AUDIT] Fournitures serialization: 2350.35ms
+INFO 2025-08-02 15:18:56,254 views 12904 23612 [LATENCY AUDIT] Fournitures serialization: 2425.44ms
+INFO 2025-08-02 15:18:57,592 views 12904 13304 [LATENCY AUDIT] Main d'oeuvre serialization: 1445.69ms
+INFO 2025-08-02 15:18:57,723 views 12904 23612 [LATENCY AUDIT] Main d'oeuvre serialization: 1469.63ms
+INFO 2025-08-02 15:19:00,613 views 12904 13304 [LATENCY AUDIT] Ouvrages serialization: 3021.03ms
+INFO 2025-08-02 15:19:00,618 views 12904 13304 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 7729.80ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:19:00,656 middleware 12904 13304 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:19:00,673 middleware 12904 13304 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 8739.92ms
+INFO 2025-08-02 15:19:00,714 basehttp 12904 13304 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5781
+INFO 2025-08-02 15:19:00,760 views 12904 23612 [LATENCY AUDIT] Ouvrages serialization: 3036.41ms
+INFO 2025-08-02 15:19:00,789 views 12904 23612 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 7897.63ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:19:00,811 middleware 12904 23612 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:19:00,970 middleware 12904 23612 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 8900.83ms
+INFO 2025-08-02 15:19:01,048 basehttp 12904 23612 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5783
+INFO 2025-08-02 15:19:43,769 middleware 12904 19988 [MIDDLEWARE AUDIT] START - POST /api/main-oeuvre/
+INFO 2025-08-02 15:19:43,783 middleware 12904 19988 [MIDDLEWARE AUDIT] Header extraction: 14.04ms
+WARNING 2025-08-02 15:19:43,793 middleware 12904 19988 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:19:43,856 middleware 12904 19988 [MIDDLEWARE AUDIT] JWT extraction: 62.55ms
+WARNING 2025-08-02 15:19:43,937 middleware 12904 19988 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:19:44,507 middleware 12904 19988 [MIDDLEWARE AUDIT] Tenant setup: 487.74ms
+INFO 2025-08-02 15:19:44,516 middleware 12904 19988 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 747.09ms (method: jwt_optimized)
+INFO 2025-08-02 15:19:44,533 mixins 12904 19988 Library - Action: create, User: elvislex@live.fr, Tenant: JWT Tenant cf22f06c
+INFO 2025-08-02 15:19:44,717 middleware 12904 19988 [MIDDLEWARE AUDIT] Cleanup: 0.12ms
+INFO 2025-08-02 15:19:44,723 middleware 12904 19988 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 947.50ms
+INFO 2025-08-02 15:19:44,726 basehttp 12904 19988 "POST /api/main-oeuvre/ HTTP/1.1" 201 374
+INFO 2025-08-02 15:19:56,505 middleware 12904 26368 [MIDDLEWARE AUDIT] START - GET /api/main-oeuvre/5/
+INFO 2025-08-02 15:19:56,507 middleware 12904 22740 [MIDDLEWARE AUDIT] START - GET /api/main-oeuvre/5/
+INFO 2025-08-02 15:19:56,510 middleware 12904 26368 [MIDDLEWARE AUDIT] Header extraction: 4.22ms
+INFO 2025-08-02 15:19:56,511 middleware 12904 22740 [MIDDLEWARE AUDIT] Header extraction: 3.18ms
+WARNING 2025-08-02 15:19:56,513 middleware 12904 26368 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 15:19:56,514 middleware 12904 22740 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:19:56,520 middleware 12904 26368 [MIDDLEWARE AUDIT] JWT extraction: 7.22ms
+INFO 2025-08-02 15:19:56,522 middleware 12904 22740 [MIDDLEWARE AUDIT] JWT extraction: 8.14ms
+WARNING 2025-08-02 15:19:56,523 middleware 12904 26368 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+WARNING 2025-08-02 15:19:56,524 middleware 12904 22740 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:19:56,993 middleware 12904 22740 [MIDDLEWARE AUDIT] Tenant setup: 460.87ms
+INFO 2025-08-02 15:19:56,994 middleware 12904 22740 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 486.36ms (method: jwt_optimized)
+INFO 2025-08-02 15:19:57,042 middleware 12904 26368 [MIDDLEWARE AUDIT] Tenant setup: 515.12ms
+INFO 2025-08-02 15:19:57,044 middleware 12904 26368 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 538.05ms (method: jwt_optimized)
+INFO 2025-08-02 15:19:57,115 middleware 12904 22740 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:19:57,120 middleware 12904 22740 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 607.18ms
+INFO 2025-08-02 15:19:57,122 basehttp 12904 22740 "GET /api/main-oeuvre/5/ HTTP/1.1" 200 378
+INFO 2025-08-02 15:19:57,177 middleware 12904 26368 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:19:57,230 middleware 12904 26368 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 671.19ms
+INFO 2025-08-02 15:19:57,246 basehttp 12904 26368 "GET /api/main-oeuvre/5/ HTTP/1.1" 200 378
+INFO 2025-08-02 15:23:20,545 middleware 12904 19400 [MIDDLEWARE AUDIT] START - DELETE /api/main-oeuvre/5/
+INFO 2025-08-02 15:23:20,546 middleware 12904 19400 [MIDDLEWARE AUDIT] Header extraction: 1.04ms
+WARNING 2025-08-02 15:23:20,547 middleware 12904 19400 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:23:20,547 middleware 12904 19400 [MIDDLEWARE AUDIT] JWT extraction: 0.00ms
+WARNING 2025-08-02 15:23:20,547 middleware 12904 19400 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:23:21,023 middleware 12904 19400 [MIDDLEWARE AUDIT] Tenant setup: 471.51ms
+INFO 2025-08-02 15:23:21,024 middleware 12904 19400 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 479.21ms (method: jwt_optimized)
+INFO 2025-08-02 15:23:21,127 mixins 12904 19400 Library - Action: delete, User: elvislex@live.fr, Tenant: JWT Tenant cf22f06c
+INFO 2025-08-02 15:23:21,340 middleware 12904 19400 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:23:21,341 middleware 12904 19400 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 794.95ms
+INFO 2025-08-02 15:23:21,342 basehttp 12904 19400 "DELETE /api/main-oeuvre/5/ HTTP/1.1" 204 0
+INFO 2025-08-02 15:23:26,759 middleware 12904 17372 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:23:26,769 middleware 12904 24684 [MIDDLEWARE AUDIT] START - GET /api/composite/all_items/
+INFO 2025-08-02 15:23:26,769 middleware 12904 17372 [MIDDLEWARE AUDIT] Header extraction: 10.05ms
+INFO 2025-08-02 15:23:26,773 middleware 12904 24684 [MIDDLEWARE AUDIT] Header extraction: 4.69ms
+WARNING 2025-08-02 15:23:26,778 middleware 12904 17372 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+WARNING 2025-08-02 15:23:26,780 middleware 12904 24684 Library - Erreur décodage JWT: module 'jwt' has no attribute 'decode'
+INFO 2025-08-02 15:23:26,782 middleware 12904 17372 [MIDDLEWARE AUDIT] JWT extraction: 4.14ms
+WARNING 2025-08-02 15:23:26,785 middleware 12904 17372 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:23:26,787 middleware 12904 24684 [MIDDLEWARE AUDIT] JWT extraction: 7.26ms
+WARNING 2025-08-02 15:23:26,802 middleware 12904 24684 Library - Fallback tenant-service pour: cf22f06c-4134-4bf0-9fbd-8a00c04a6c8f
+INFO 2025-08-02 15:23:27,268 middleware 12904 17372 [MIDDLEWARE AUDIT] Tenant setup: 478.92ms
+INFO 2025-08-02 15:23:27,269 middleware 12904 17372 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 509.93ms (method: jwt_optimized)
+INFO 2025-08-02 15:23:27,274 views 12904 17372 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:23:27,275 views 12904 17372 [LATENCY AUDIT] Paramètres parsing: 1.04ms
+INFO 2025-08-02 15:23:27,278 views 12904 17372 [LATENCY AUDIT] QuerySet preparation: 3.09ms
+INFO 2025-08-02 15:23:27,333 middleware 12904 24684 [MIDDLEWARE AUDIT] Tenant setup: 528.22ms
+INFO 2025-08-02 15:23:27,337 middleware 12904 24684 [MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: 568.56ms (method: jwt_optimized)
+INFO 2025-08-02 15:23:27,342 views 12904 24684 [LATENCY AUDIT] Composite endpoint START - GET /api/composite/all_items/
+INFO 2025-08-02 15:23:27,343 views 12904 24684 [LATENCY AUDIT] Paramètres parsing: 1.50ms
+INFO 2025-08-02 15:23:27,346 views 12904 24684 [LATENCY AUDIT] QuerySet preparation: 2.67ms
+INFO 2025-08-02 15:23:27,386 views 12904 17372 [LATENCY AUDIT] Fournitures query (4 items): 106.63ms
+INFO 2025-08-02 15:23:27,466 views 12904 24684 [LATENCY AUDIT] Fournitures query (4 items): 118.57ms
+INFO 2025-08-02 15:23:27,487 views 12904 17372 [LATENCY AUDIT] Main d'oeuvre query (3 items): 101.69ms
+INFO 2025-08-02 15:23:27,585 views 12904 24684 [LATENCY AUDIT] Main d'oeuvre query (3 items): 119.00ms
+INFO 2025-08-02 15:23:27,704 views 12904 17372 [LATENCY AUDIT] Ouvrages query (4 items): 215.32ms
+INFO 2025-08-02 15:23:27,704 views 12904 17372 [LATENCY AUDIT] Ingredients optimization (0 items): 0.00ms
+INFO 2025-08-02 15:23:27,705 views 12904 17372 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:23:27,831 views 12904 24684 [LATENCY AUDIT] Ouvrages query (4 items): 245.96ms
+INFO 2025-08-02 15:23:27,833 views 12904 24684 [LATENCY AUDIT] Ingredients optimization (0 items): 0.00ms
+INFO 2025-08-02 15:23:27,834 views 12904 24684 [LATENCY AUDIT] Count queries: 0.00ms
+INFO 2025-08-02 15:23:29,759 views 12904 17372 [LATENCY AUDIT] Fournitures serialization: 2053.38ms
+INFO 2025-08-02 15:23:30,133 views 12904 24684 [LATENCY AUDIT] Fournitures serialization: 2297.92ms
+INFO 2025-08-02 15:23:31,004 views 12904 17372 [LATENCY AUDIT] Main d'oeuvre serialization: 1244.57ms
+INFO 2025-08-02 15:23:31,574 views 12904 24684 [LATENCY AUDIT] Main d'oeuvre serialization: 1441.12ms
+INFO 2025-08-02 15:23:33,533 views 12904 17372 [LATENCY AUDIT] Ouvrages serialization: 2529.76ms
+INFO 2025-08-02 15:23:33,534 views 12904 17372 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 6259.53ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:23:33,537 middleware 12904 17372 [MIDDLEWARE AUDIT] Cleanup: 1.02ms
+INFO 2025-08-02 15:23:33,538 middleware 12904 17372 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 6777.73ms
+INFO 2025-08-02 15:23:33,541 basehttp 12904 17372 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5780
+INFO 2025-08-02 15:23:34,477 views 12904 24684 [LATENCY AUDIT] Ouvrages serialization: 2902.64ms
+INFO 2025-08-02 15:23:34,478 views 12904 24684 [LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: 7135.93ms (4F + 3MO + 4O)
+INFO 2025-08-02 15:23:34,479 middleware 12904 24684 [MIDDLEWARE AUDIT] Cleanup: 0.00ms
+INFO 2025-08-02 15:23:34,480 middleware 12904 24684 [MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: 7710.40ms
+INFO 2025-08-02 15:23:34,483 basehttp 12904 24684 "GET /api/composite/all_items/?page_size=200&page=1 HTTP/1.1" 200 5780

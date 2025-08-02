@@ -361,10 +361,20 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
         Endpoint composite qui retourne fournitures, main d'œuvre et ouvrages en un seul appel.
         Optimisé avec QuerySet bulk et pagination unifiée.
         """
+        import time
+        
+        # 🎯 AUDIT LATENCE - Start timing
+        request_start = time.time()
+        logger.info(f"[LATENCY AUDIT] Composite endpoint START - {request.method} {request.path}")
+        
         try:
             # Paramètres de pagination
             page_size = int(request.GET.get('page_size', 50))
             page = int(request.GET.get('page', 1))
+            
+            # 🎯 AUDIT - Timing paramètres
+            params_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Paramètres parsing: {(params_time - request_start)*1000:.2f}ms")
             
             # Paramètres de filtrage optionnels
             search_query = request.GET.get('search', '').strip()
@@ -381,8 +391,9 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
                 'type', 'unite', 'skill_level', 'productivity_factor'
             ).order_by('categorie__nom', 'nom')
             
+            # OPTIMISATION N+1: QuerySet avec prefetch_related pour ingredients
             ouvrages_qs = Ouvrage.objects.select_related('categorie').prefetch_related(
-                'ingredients__element_type'
+                'ingredients__element_type'  # Précharge les element_type des ingredients
             ).only(
                 'id', 'nom', 'unite', 'categorie__id', 'categorie__nom', 
                 'prix_recommande', 'code', 'type', 'complexity', 'marge', 'efficiency'
@@ -406,38 +417,90 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
                 main_oeuvre_qs = main_oeuvre_qs.filter(categorie_id=category_filter)
                 ouvrages_qs = ouvrages_qs.filter(categorie_id=category_filter)
             
-            # OPTIMISATION: Exécution des requêtes avec limites et annotations pour performance DB
-            start_time = request.META.get('HTTP_X_REQUEST_START', None)
+            # 🎯 AUDIT - Timing QuerySet preparation
+            qs_prep_time = time.time()
+            logger.info(f"[LATENCY AUDIT] QuerySet preparation: {(qs_prep_time - params_time)*1000:.2f}ms")
             
             # Limitation intelligente par type pour équilibrer la réponse
             limit_per_type = min(page_size, 100)  # Cap à 100 pour éviter surcharge
             
+            # 🎯 AUDIT - Timing DB queries execution
+            db_start = time.time()
+            
             # Exécution optimisée avec evaluate() pour forcer l'exécution
             fournitures = list(fournitures_qs[:limit_per_type])
-            main_oeuvre = list(main_oeuvre_qs[:limit_per_type])  
+            fournitures_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Fournitures query ({len(fournitures)} items): {(fournitures_time - db_start)*1000:.2f}ms")
+            
+            main_oeuvre = list(main_oeuvre_qs[:limit_per_type])
+            main_oeuvre_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Main d'oeuvre query ({len(main_oeuvre)} items): {(main_oeuvre_time - fournitures_time)*1000:.2f}ms")
+            
             ouvrages = list(ouvrages_qs[:limit_per_type])
+            ouvrages_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Ouvrages query ({len(ouvrages)} items): {(ouvrages_time - main_oeuvre_time)*1000:.2f}ms")
+            
+            # 🎯 OPTIMISATION N+1: Précharger les données des ingrédients
+            ingredients_opt_start = time.time()
+            
+            # Optimiser les ouvrages avec leurs ingrédients
+            from .prefetch_utils import optimize_ingredients_queryset
+            
+            # Extraire tous les ingrédients des ouvrages chargés
+            all_ingredients = []
+            for ouvrage in ouvrages:
+                if hasattr(ouvrage, '_prefetched_objects_cache') and 'ingredients' in ouvrage._prefetched_objects_cache:
+                    all_ingredients.extend(ouvrage._prefetched_objects_cache['ingredients'])
+            
+            # Optimiser les ingrédients en batch
+            if all_ingredients:
+                optimize_ingredients_queryset(all_ingredients)
+            
+            ingredients_opt_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Ingredients optimization ({len(all_ingredients)} items): {(ingredients_opt_time - ingredients_opt_start)*1000:.2f}ms")
+            
+            # 🎯 AUDIT - Timing count queries
+            count_start = time.time()
             
             # Compter totaux pour pagination (requêtes séparées mais optimisées avec index)
             total_fournitures = fournitures_qs.count() if len(fournitures) == limit_per_type else len(fournitures)
             total_main_oeuvre = main_oeuvre_qs.count() if len(main_oeuvre) == limit_per_type else len(main_oeuvre)
             total_ouvrages = ouvrages_qs.count() if len(ouvrages) == limit_per_type else len(ouvrages)
             
+            count_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Count queries: {(count_time - count_start)*1000:.2f}ms")
+            
+            # 🎯 AUDIT - Timing serialization
+            serialization_start = time.time()
+            
             # Sérialisation optimisée avec metrics intégrées
+            fournitures_serialized = FournitureSerializer(fournitures, many=True).data
+            fournitures_ser_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Fournitures serialization: {(fournitures_ser_time - serialization_start)*1000:.2f}ms")
+            
+            main_oeuvre_serialized = MainOeuvreSerializer(main_oeuvre, many=True).data
+            main_oeuvre_ser_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Main d'oeuvre serialization: {(main_oeuvre_ser_time - fournitures_ser_time)*1000:.2f}ms")
+            
+            ouvrages_serialized = OuvrageSerializer(ouvrages, many=True).data
+            ouvrages_ser_time = time.time()
+            logger.info(f"[LATENCY AUDIT] Ouvrages serialization: {(ouvrages_ser_time - main_oeuvre_ser_time)*1000:.2f}ms")
+            
             response_data = {
                 'fournitures': {
                     'count': len(fournitures),
                     'total': total_fournitures,
-                    'items': FournitureSerializer(fournitures, many=True).data
+                    'items': fournitures_serialized
                 },
                 'main_oeuvre': {
                     'count': len(main_oeuvre),
                     'total': total_main_oeuvre,
-                    'items': MainOeuvreSerializer(main_oeuvre, many=True).data
+                    'items': main_oeuvre_serialized
                 },
                 'ouvrages': {
                     'count': len(ouvrages),
                     'total': total_ouvrages,
-                    'items': OuvrageSerializer(ouvrages, many=True).data
+                    'items': ouvrages_serialized
                 },
                 'pagination': {
                     'page': page,
@@ -459,7 +522,22 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
                 }
             }
             
-            logger.info(f"Library - Endpoint composite: {len(fournitures)}F + {len(main_oeuvre)}MO + {len(ouvrages)}O")
+            # 🎯 AUDIT - Final timing
+            request_end = time.time()
+            total_time = (request_end - request_start) * 1000
+            
+            # Ajouter métriques de performance à la réponse
+            response_data['latency_audit'] = {
+                'total_time_ms': f"{total_time:.2f}",
+                'params_parsing_ms': f"{(params_time - request_start)*1000:.2f}",
+                'queryset_prep_ms': f"{(qs_prep_time - params_time)*1000:.2f}",
+                'db_queries_ms': f"{(ouvrages_time - db_start)*1000:.2f}",
+                'count_queries_ms': f"{(count_time - count_start)*1000:.2f}",
+                'serialization_ms': f"{(ouvrages_ser_time - serialization_start)*1000:.2f}",
+                'response_building_ms': f"{(request_end - ouvrages_ser_time)*1000:.2f}"
+            }
+            
+            logger.info(f"[LATENCY AUDIT] TOTAL COMPOSITE ENDPOINT: {total_time:.2f}ms ({len(fournitures)}F + {len(main_oeuvre)}MO + {len(ouvrages)}O)")
             
             return Response(response_data)
             

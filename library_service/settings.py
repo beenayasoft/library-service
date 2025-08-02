@@ -236,6 +236,10 @@ SERVICE_PORT = config('SERVICE_PORT', default=8005, cast=int)
 # Configuration tenant-service pour communication inter-services
 TENANT_SERVICE_URL = config('TENANT_SERVICE_URL', default='http://localhost:8001')
 
+# Configuration JWT (alignée avec auth-service et api-gateway)
+JWT_SECRET_KEY = config('JWT_SECRET_KEY', default='your-jwt-secret-key')
+JWT_ALGORITHM = config('JWT_ALGORITHM', default='HS256')
+
 # Configuration de performance
 DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
 FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB

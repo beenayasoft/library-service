@@ -133,8 +133,15 @@ class IngredientOuvrageSerializer(serializers.ModelSerializer):
     
     def get_element_nom(self, obj):
         """
-        Récupère le nom de l'élément (fourniture ou main d'œuvre).
+        Récupère le nom de l'élément (fourniture ou main d'œuvre) - OPTIMISÉ.
+        Utilise les données préchargées pour éviter les requêtes N+1.
         """
+        # Vérifier si les données sont préchargées via prefetch_related
+        if hasattr(obj, '_prefetched_element_data'):
+            element_data = obj._prefetched_element_data
+            return element_data.get('nom')
+        
+        # Fallback: requête directe (comportement original)
         if obj.element_type.model == 'fourniture':
             try:
                 return Fourniture.objects.get(id=obj.element_id).nom
@@ -149,8 +156,15 @@ class IngredientOuvrageSerializer(serializers.ModelSerializer):
     
     def get_element_unite(self, obj):
         """
-        Récupère l'unité de l'élément (fourniture ou main d'œuvre).
+        Récupère l'unité de l'élément (fourniture ou main d'œuvre) - OPTIMISÉ.
+        Utilise les données préchargées pour éviter les requêtes N+1.
         """
+        # Vérifier si les données sont préchargées via prefetch_related
+        if hasattr(obj, '_prefetched_element_data'):
+            element_data = obj._prefetched_element_data
+            return element_data.get('unite', 'h' if obj.element_type.model == 'mainoeuvre' else None)
+        
+        # Fallback: requête directe (comportement original)
         if obj.element_type.model == 'fourniture':
             try:
                 return Fourniture.objects.get(id=obj.element_id).unite
@@ -165,8 +179,18 @@ class IngredientOuvrageSerializer(serializers.ModelSerializer):
     
     def get_element_prix(self, obj):
         """
-        Récupère le prix unitaire de l'élément (fourniture ou main d'œuvre).
+        Récupère le prix unitaire de l'élément (fourniture ou main d'œuvre) - OPTIMISÉ.
+        Utilise les données préchargées pour éviter les requêtes N+1.
         """
+        # Vérifier si les données sont préchargées via prefetch_related
+        if hasattr(obj, '_prefetched_element_data'):
+            element_data = obj._prefetched_element_data
+            if obj.element_type.model == 'fourniture':
+                return element_data.get('prix_achat_ht')
+            elif obj.element_type.model == 'mainoeuvre':
+                return element_data.get('cout_horaire')
+        
+        # Fallback: requête directe (comportement original)
         if obj.element_type.model == 'fourniture':
             try:
                 return Fourniture.objects.get(id=obj.element_id).prix_achat_ht

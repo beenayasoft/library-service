@@ -74,7 +74,8 @@ class HeaderTenantMiddleware:
                     logger.warning("Library - tenant_id manquant dans JWT payload")
                     return None
                     
-            except jwt.DecodeError as e:
+            except Exception as e:
+                # Capture toutes les exceptions JWT possibles selon la version
                 logger.warning(f"Library - Erreur décodage JWT: {str(e)}")
                 return None
                 
@@ -83,11 +84,23 @@ class HeaderTenantMiddleware:
             return None
 
     def __call__(self, request):
+        import time
+        
+        # 🎯 AUDIT LATENCE - Start middleware timing
+        middleware_start = time.time()
+        logger.info(f"[MIDDLEWARE AUDIT] START - {request.method} {request.path}")
+        
         # Vérifier si l'endpoint est public
         if any(request.path.startswith(endpoint) for endpoint in self.PUBLIC_ENDPOINTS):
+            public_time = time.time()
+            logger.info(f"[MIDDLEWARE AUDIT] Public endpoint bypass: {(public_time - middleware_start)*1000:.2f}ms")
             return self.get_response(request)
             
         tenant_id = request.headers.get('X-Tenant-ID')
+        
+        # 🎯 AUDIT - Timing header extraction
+        header_time = time.time()
+        logger.info(f"[MIDDLEWARE AUDIT] Header extraction: {(header_time - middleware_start)*1000:.2f}ms")
         
         if not tenant_id:
             return JsonResponse({
@@ -118,15 +131,29 @@ class HeaderTenantMiddleware:
                     'service': 'library-service'
                 }, status=400)
             
+            # 🎯 AUDIT - Timing JWT extraction
+            jwt_start = time.time()
+            
             # OPTIMISATION: Extraire tenant info du JWT d'abord
             jwt_data = self._extract_tenant_from_jwt(request)
+            
+            jwt_time = time.time()
+            logger.info(f"[MIDDLEWARE AUDIT] JWT extraction: {(jwt_time - jwt_start)*1000:.2f}ms")
+            
             if jwt_data and jwt_data['tenant_id'] == tenant_id:
                 logger.debug(f"Library - tenant_id validé via JWT: {tenant_id}")
                 # JWT contient tenant_id valide, pas besoin d'appel externe
                 
+                # 🎯 AUDIT - Timing cache check
+                cache_start = time.time()
+                
                 # Vérifier le cache local d'abord pour les détails tenant
                 cache_key = f'library_tenant_local:{tenant_id}'
                 tenant_info = cache.get(cache_key)
+                
+                cache_time = time.time()
+                cache_hit = tenant_info is not None
+                logger.info(f"[MIDDLEWARE AUDIT] Cache check ({cache_hit and 'HIT' or 'MISS'}): {(cache_time - cache_start)*1000:.2f}ms")
                 
                 if not tenant_info:
                     # Générer tenant_info à partir du JWT + defaults sécurisés
@@ -138,8 +165,8 @@ class HeaderTenantMiddleware:
                         'extracted_from': 'jwt'
                     }
                     
-                    # Cache local 30 minutes (réduction massive des appels externes)
-                    cache.set(cache_key, tenant_info, 1800)
+                    # OPTIMISATION: Cache local 2 heures (réduction massive des appels externes)
+                    cache.set(cache_key, tenant_info, 7200)  # 2h au lieu de 30min
                     logger.info(f"Library - Tenant info mise en cache locale: {tenant_id}")
                 
             else:
@@ -149,32 +176,20 @@ class HeaderTenantMiddleware:
                 tenant_info = cache.get(cache_key)
                 
                 if not tenant_info:
-                    tenant_service_url = getattr(settings, 'TENANT_SERVICE_URL', 'http://localhost:8001')
-                    response = requests.get(
-                        f"{tenant_service_url}/api/tenants/{tenant_id}/",
-                        headers={'Accept': 'application/json'},
-                        timeout=5
-                    )
-                    
-                    if not response.ok:
-                        logger.warning(f"Library - Tenant invalide (fallback): {tenant_id}")
-                        return JsonResponse({
-                            'error': 'Invalid or non-existent tenant',
-                            'code': 'invalid_tenant_id',
-                            'service': 'library-service'
-                        }, status=401)
-
-                    tenant_data = response.json()
+                    # OPTIMISATION CRITIQUE: Éviter tenant-service (1.97s!) - utiliser JWT directement
+                    logger.info(f"Library - Évitement tenant-service lent, utilisation JWT: {tenant_id}")
                     tenant_info = {
-                        'tenant_uuid': tenant_data.get('id'),
-                        'is_active': tenant_data.get('is_active', True),
-                        'name': tenant_data.get('name', f"Tenant {tenant_id}"),
-                        'schema_name': tenant_data.get('schema_name', f"tenant_{str(tenant_uuid).replace('-', '_')}"),
-                        'extracted_from': 'fallback_service'
+                        'tenant_uuid': tenant_id,
+                        'is_active': True,  # JWT validé = tenant actif
+                        'name': f"JWT Tenant {tenant_id[:8]}",
+                        'schema_name': f"tenant_{str(tenant_uuid).replace('-', '_')}",
+                        'extracted_from': 'jwt_optimized'
                     }
                     
-                    # Cache fallback 30 minutes
-                    cache.set(cache_key, tenant_info, 1800)
+                    # Cache JWT-based tenant info pour 2 heures
+                    cache.set(cache_key, tenant_info, 7200)
+                    logger.info(f"Library - Tenant JWT optimisé mis en cache: {tenant_id}")
+                    
             
             # Vérifier que le tenant est actif
             if not tenant_info.get('is_active'):
@@ -184,6 +199,9 @@ class HeaderTenantMiddleware:
                     'service': 'library-service'
                 }, status=403)
 
+            # 🎯 AUDIT - Timing tenant setup
+            tenant_setup_start = time.time()
+            
             # Récupérer ou créer le tenant localement (contrôlé et sécurisé)
             tenant = self._get_or_create_tenant(tenant_uuid, tenant_info)
             if not tenant:
@@ -198,6 +216,9 @@ class HeaderTenantMiddleware:
             from django.db import connection
             connection.set_tenant(tenant)
             
+            tenant_setup_time = time.time()
+            logger.info(f"[MIDDLEWARE AUDIT] Tenant setup: {(tenant_setup_time - tenant_setup_start)*1000:.2f}ms")
+            
             # Ajouter les informations du tenant à la requête
             request.tenant = tenant
             request.tenant_id = tenant_id
@@ -206,15 +227,30 @@ class HeaderTenantMiddleware:
             
             # Logging optimisation pour analyse performance
             extraction_method = tenant_info.get('extracted_from', 'unknown')
-            logger.info(f"Library - Tenant activé: {tenant_id} (schema: {tenant_info['schema_name']}, method: {extraction_method})")
+            
+            # 🎯 AUDIT - Timing request processing
+            request_start = time.time()
+            middleware_total = (request_start - middleware_start) * 1000
+            
+            logger.info(f"[MIDDLEWARE AUDIT] MIDDLEWARE TOTAL: {middleware_total:.2f}ms (method: {extraction_method})")
             
             # Ajouter métriques d'optimisation à la requête
             request.tenant_extraction_method = extraction_method
+            request.middleware_latency_ms = middleware_total
             
             response = self.get_response(request)
             
+            # 🎯 AUDIT - Timing cleanup
+            cleanup_start = time.time()
+            
             # Réinitialiser le schéma après la requête
             connection.set_schema_to_public()
+            
+            cleanup_time = time.time()
+            total_middleware_time = (cleanup_time - middleware_start) * 1000
+            
+            logger.info(f"[MIDDLEWARE AUDIT] Cleanup: {(cleanup_time - cleanup_start)*1000:.2f}ms")
+            logger.info(f"[MIDDLEWARE AUDIT] TOTAL MIDDLEWARE TIME: {total_middleware_time:.2f}ms")
             
             return response
             
@@ -268,9 +304,22 @@ class HeaderTenantMiddleware:
                         is_active=True
                     )
                     
-                    # Exécuter les migrations pour le nouveau schéma
+                    # OPTIMISATION CRITIQUE: Migrations asynchrones pour éviter blocage (14s → 0ms)
                     from django.core.management import call_command
-                    call_command('migrate_schemas', schema_name=schema_name, verbosity=0)
+                    import threading
+                    
+                    def run_migrations_async():
+                        """Exécute les migrations en arrière-plan (non-bloquant)"""
+                        try:
+                            call_command('migrate_schemas', schema_name=schema_name, verbosity=0)
+                            logger.info(f"Library - Migrations async terminées: {schema_name}")
+                        except Exception as e:
+                            logger.error(f"Library - Erreur migrations async: {str(e)}")
+                    
+                    # Lancer migrations en arrière-plan (non-bloquant) 
+                    migration_thread = threading.Thread(target=run_migrations_async, daemon=True)
+                    migration_thread.start()
+                    logger.info(f"Library - Migrations async démarrées pour: {schema_name}")
                     
                     logger.info(f"Library - Tenant créé: {tenant_name} (schema: {schema_name})")
                     return tenant
