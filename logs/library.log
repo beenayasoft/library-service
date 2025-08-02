@@ -1601,3 +1601,4 @@ WARNING 2025-08-01 23:30:01,859 basehttp 46412 20436 "GET /api/main-oeuvre/ HTTP
 WARNING 2025-08-01 23:30:01,859 basehttp 46412 34120 "GET /api/ouvrages/ HTTP/1.1" 400 98
 WARNING 2025-08-01 23:30:02,378 log 46412 33448 Bad Request: /api/fournitures/
 WARNING 2025-08-01 23:30:02,378 basehttp 46412 33448 "GET /api/fournitures/ HTTP/1.1" 400 98
+INFO 2025-08-02 19:31:45,150 autoreload 20656 49840 Watching for file changes with StatReloader
