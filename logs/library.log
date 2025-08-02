@@ -1548,3 +1548,56 @@ WARNING 2025-07-29 16:15:07,131 basehttp 23348 36332 "GET /api/main-oeuvre/ HTTP
 WARNING 2025-07-29 16:15:07,132 basehttp 23348 37908 "GET /api/fournitures/ HTTP/1.1" 400 98
 WARNING 2025-07-29 16:15:07,375 log 23348 35456 Bad Request: /api/ouvrages/
 WARNING 2025-07-29 16:15:07,375 basehttp 23348 35456 "GET /api/ouvrages/ HTTP/1.1" 400 98
+INFO 2025-07-29 16:20:11,439 autoreload 21348 35828 Watching for file changes with StatReloader
+INFO 2025-07-30 09:54:07,696 autoreload 13936 34232 Watching for file changes with StatReloader
+INFO 2025-07-30 11:20:01,541 basehttp 13936 33896 "GET /health/ HTTP/1.1" 200 88
+WARNING 2025-07-30 19:30:39,047 log 13936 8516 Bad Request: /api/fournitures/
+WARNING 2025-07-30 19:30:39,050 basehttp 13936 8516 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:39,051 log 13936 42824 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-30 19:30:39,053 log 13936 31476 Bad Request: /api/ouvrages/
+WARNING 2025-07-30 19:30:39,053 basehttp 13936 42824 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:39,054 basehttp 13936 31476 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:39,815 log 13936 2856 Bad Request: /api/fournitures/
+WARNING 2025-07-30 19:30:39,815 basehttp 13936 2856 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:40,056 log 13936 9944 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-30 19:30:40,057 log 13936 35836 Bad Request: /api/ouvrages/
+WARNING 2025-07-30 19:30:40,057 basehttp 13936 9944 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:40,057 basehttp 13936 35836 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:57,243 log 13936 39140 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-30 19:30:57,243 log 13936 22292 Bad Request: /api/fournitures/
+WARNING 2025-07-30 19:30:57,244 basehttp 13936 39140 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:57,244 basehttp 13936 22292 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:57,283 log 13936 40344 Bad Request: /api/ouvrages/
+WARNING 2025-07-30 19:30:57,283 basehttp 13936 40344 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:57,965 log 13936 8044 Bad Request: /api/fournitures/
+WARNING 2025-07-30 19:30:57,965 log 13936 1984 Bad Request: /api/main-oeuvre/
+WARNING 2025-07-30 19:30:57,965 basehttp 13936 8044 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:57,966 basehttp 13936 1984 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-07-30 19:30:58,182 log 13936 28416 Bad Request: /api/ouvrages/
+WARNING 2025-07-30 19:30:58,183 basehttp 13936 28416 "GET /api/ouvrages/ HTTP/1.1" 400 98
+INFO 2025-07-31 15:10:40,492 autoreload 46412 22644 Watching for file changes with StatReloader
+INFO 2025-07-31 15:34:44,974 basehttp 46412 43804 "GET /health/ HTTP/1.1" 200 88
+WARNING 2025-08-01 23:29:43,827 log 46412 37012 Bad Request: /api/fournitures/
+WARNING 2025-08-01 23:29:43,830 log 46412 22104 Bad Request: /api/main-oeuvre/
+WARNING 2025-08-01 23:29:43,831 basehttp 46412 37012 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:29:43,831 basehttp 46412 22104 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:29:44,317 log 46412 28372 Bad Request: /api/ouvrages/
+WARNING 2025-08-01 23:29:44,317 basehttp 46412 28372 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:29:44,538 log 46412 38084 Bad Request: /api/main-oeuvre/
+WARNING 2025-08-01 23:29:44,539 log 46412 15220 Bad Request: /api/fournitures/
+WARNING 2025-08-01 23:29:44,540 basehttp 46412 38084 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:29:44,540 basehttp 46412 15220 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:29:44,767 log 46412 46144 Bad Request: /api/ouvrages/
+WARNING 2025-08-01 23:29:44,768 basehttp 46412 46144 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:30:00,996 log 46412 36280 Bad Request: /api/main-oeuvre/
+WARNING 2025-08-01 23:30:00,997 log 46412 44500 Bad Request: /api/ouvrages/
+WARNING 2025-08-01 23:30:00,998 log 46412 31416 Bad Request: /api/fournitures/
+WARNING 2025-08-01 23:30:00,998 basehttp 46412 36280 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:30:00,998 basehttp 46412 44500 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:30:00,999 basehttp 46412 31416 "GET /api/fournitures/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:30:01,858 log 46412 20436 Bad Request: /api/main-oeuvre/
+WARNING 2025-08-01 23:30:01,859 log 46412 34120 Bad Request: /api/ouvrages/
+WARNING 2025-08-01 23:30:01,859 basehttp 46412 20436 "GET /api/main-oeuvre/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:30:01,859 basehttp 46412 34120 "GET /api/ouvrages/ HTTP/1.1" 400 98
+WARNING 2025-08-01 23:30:02,378 log 46412 33448 Bad Request: /api/fournitures/
+WARNING 2025-08-01 23:30:02,378 basehttp 46412 33448 "GET /api/fournitures/ HTTP/1.1" 400 98
