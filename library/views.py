@@ -22,6 +22,7 @@ from .serializers import (
     LibraryItemSerializer
 )
 from .mixins import GatewayAuthMixin
+from .services.supplier_integration import get_supplier_service
 
 class CategorieViewSet(GatewayAuthMixin, viewsets.ModelViewSet):
     """
@@ -104,7 +105,7 @@ class FournitureViewSet(GatewayAuthMixin, viewsets.ModelViewSet):
     queryset = Fourniture.objects.all()
     serializer_class = FournitureSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['categorie', 'unite', 'type', 'supplier', 'is_recyclable']
+    filterset_fields = ['categorie', 'unite', 'type', 'is_recyclable']
     search_fields = ['nom', 'description', 'reference', 'code']
     ordering_fields = ['nom', 'prix_achat_ht', 'created_at', 'updated_at']
     
@@ -113,7 +114,7 @@ class FournitureViewSet(GatewayAuthMixin, viewsets.ModelViewSet):
         if hasattr(self, 'action'):
             if self.action == 'list':
                 return Fourniture.objects.select_related('categorie').only(
-                    'id', 'nom', 'unite', 'prix_achat_ht', 'categorie', 'reference', 'type', 'code'
+                    'id', 'nom', 'unite', 'prix_achat_ht', 'categorie', 'reference', 'type', 'code', 'supplier_id'
                 )
             elif self.action == 'retrieve':
                 return Fourniture.objects.select_related('categorie')
@@ -140,11 +141,61 @@ class FournitureViewSet(GatewayAuthMixin, viewsets.ModelViewSet):
             prix_moyen=Avg('prix_achat_ht'),
             prix_total=Sum('prix_achat_ht'),
             avec_reference=Count('id', filter=Q(reference__isnull=False)),
-            avec_supplier=Count('id', filter=Q(supplier__isnull=False)),
+            avec_supplier_id=Count('id', filter=Q(supplier_id__isnull=False)),
             recyclables=Count('id', filter=Q(is_recyclable=True))
         )
         
         return Response(stats_aggregates)
+
+    @action(detail=False, methods=['get'])
+    def suppliers_search(self, request):
+        """
+        Recherche de fournisseurs dans le service CRM pour l'intégration
+        """
+        query = request.query_params.get('q', '').strip()
+        if not query or len(query) < 2:
+            return Response({'results': []})
+        
+        tenant_id = request.headers.get('X-Tenant-ID')
+        if not tenant_id:
+            return Response(
+                {'error': 'Tenant ID required'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        try:
+            supplier_service = get_supplier_service(tenant_id)
+            suppliers = supplier_service.search_suppliers(query, limit=20)
+            return Response({'results': suppliers})
+        except Exception as e:
+            logger.error(f"Supplier search error: {e}")
+            return Response(
+                {'error': 'Service temporairement indisponible'}, 
+                status=status.HTTP_503_SERVICE_UNAVAILABLE
+            )
+    
+    @action(detail=False, methods=['get'])
+    def suppliers_stats(self, request):
+        """
+        Statistiques des fournisseurs depuis le service CRM
+        """
+        tenant_id = request.headers.get('X-Tenant-ID')
+        if not tenant_id:
+            return Response(
+                {'error': 'Tenant ID required'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        try:
+            supplier_service = get_supplier_service(tenant_id)
+            stats = supplier_service.get_suppliers_stats()
+            return Response(stats)
+        except Exception as e:
+            logger.error(f"Supplier stats error: {e}")
+            return Response(
+                {'error': 'Service temporairement indisponible'}, 
+                status=status.HTTP_503_SERVICE_UNAVAILABLE
+            )
 
     @action(detail=False, methods=['get'])
     def par_categorie(self, request):
@@ -363,6 +414,11 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
         """
         import time
         
+        # DEBUG: Log des headers reçus pour debugging
+        tenant_id = request.headers.get('X-Tenant-ID')
+        logger.info(f"[COMPOSITE DEBUG] Headers: X-Tenant-ID={tenant_id}")
+        logger.info(f"[COMPOSITE DEBUG] All headers: {dict(request.headers)}")
+        
         # 🎯 AUDIT LATENCE - Start timing
         request_start = time.time()
         logger.info(f"[LATENCY AUDIT] Composite endpoint START - {request.method} {request.path}")
@@ -383,7 +439,7 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
             # QuerySets OPTIMISÉS avec select_related et prefetch_related pour éviter N+1 queries
             fournitures_qs = Fourniture.objects.select_related('categorie').only(
                 'id', 'nom', 'unite', 'prix_achat_ht', 'categorie__id', 'categorie__nom', 
-                'reference', 'type', 'code', 'vat_rate', 'supplier'
+                'reference', 'type', 'code', 'vat_rate', 'supplier_id'
             ).order_by('categorie__nom', 'nom')
             
             main_oeuvre_qs = MainOeuvre.objects.select_related('categorie').only(
@@ -474,8 +530,8 @@ class LibraryCompositeViewSet(GatewayAuthMixin, viewsets.ViewSet):
             # 🎯 AUDIT - Timing serialization
             serialization_start = time.time()
             
-            # Sérialisation optimisée avec metrics intégrées
-            fournitures_serialized = FournitureSerializer(fournitures, many=True).data
+            # Sérialisation optimisée avec metrics intégrées et contexte pour supplier_details
+            fournitures_serialized = FournitureSerializer(fournitures, many=True, context={'request': request}).data
             fournitures_ser_time = time.time()
             logger.info(f"[LATENCY AUDIT] Fournitures serialization: {(fournitures_ser_time - serialization_start)*1000:.2f}ms")
             

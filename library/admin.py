@@ -30,9 +30,9 @@ class FournitureAdmin(admin.ModelAdmin):
     """
     Administration des fournitures.
     """
-    list_display = ('nom', 'unite', 'prix_achat_ht', 'categorie', 'type', 'supplier')
+    list_display = ('nom', 'unite', 'prix_achat_ht', 'categorie', 'type', 'supplier_id')
     list_filter = ('categorie', 'type', 'unite', 'is_recyclable', 'created_at')
-    search_fields = ('nom', 'description', 'reference', 'code', 'supplier')
+    search_fields = ('nom', 'description', 'reference', 'code')
     
     fieldsets = (
         ('Informations de base', {
@@ -45,7 +45,7 @@ class FournitureAdmin(admin.ModelAdmin):
             'fields': ('prix_achat_ht', 'vat_rate')
         }),
         ('Fournisseur', {
-            'fields': ('supplier',)
+            'fields': ('supplier_id',)
         }),
         ('Propriétés BTP', {
             'fields': ('waste_factor', 'is_recyclable')

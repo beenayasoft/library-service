@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.contenttypes.models import ContentType
 from .models import Categorie, Fourniture, MainOeuvre, Ouvrage, IngredientOuvrage
+from .services.supplier_integration import get_supplier_service
 
 class CategorieSerializer(serializers.ModelSerializer):
     """
@@ -31,18 +32,21 @@ class CategorieDetailSerializer(serializers.ModelSerializer):
 
 class FournitureSerializer(serializers.ModelSerializer):
     """
-    Sérialiseur pour le modèle Fourniture.
+    Sérialiseur pour le modèle Fourniture avec intégration CRM.
     """
     categorie_nom = serializers.SerializerMethodField(read_only=True)
     unitPrice = serializers.DecimalField(source='prix_achat_ht', max_digits=10, decimal_places=2, read_only=True)
     vatRate = serializers.DecimalField(source='vat_rate', max_digits=5, decimal_places=2, read_only=True)
     wasteFactor = serializers.DecimalField(source='waste_factor', max_digits=5, decimal_places=2, read_only=True)
+    supplier_details = serializers.SerializerMethodField(read_only=True)
+    effective_supplier_name = serializers.CharField(read_only=True)
     
     class Meta:
         model = Fourniture
         fields = [
             'id', 'nom', 'unite', 'prix_achat_ht', 'categorie', 'categorie_nom', 
-            'description', 'reference', 'supplier', 'vat_rate', 'type', 'code',
+            'description', 'reference', 'supplier_id', 'supplier_details',
+            'effective_supplier_name', 'vat_rate', 'type', 'code',
             'waste_factor', 'is_recyclable', 'unitPrice', 'vatRate', 'wasteFactor',
             'created_at', 'updated_at'
         ]
@@ -54,6 +58,68 @@ class FournitureSerializer(serializers.ModelSerializer):
         if obj.categorie:
             return obj.categorie.chemin_complet
         return None
+    
+    def get_supplier_details(self, obj):
+        """
+        🚀 Récupère les détails du fournisseur depuis le service CRM avec gestion robuste
+        """
+        if not obj.supplier_id:
+            return None
+        
+        # Récupérer le tenant_id depuis le contexte de la requête
+        request = self.context.get('request')
+        if not request:
+            return None
+            
+        tenant_id = request.headers.get('X-Tenant-ID')
+        if not tenant_id:
+            return None
+        
+        try:
+            # 🚀 SOLUTION ROBUSTE: Récupérer token avec fallbacks multiples
+            auth_token = self._extract_auth_token(request)
+            
+            # Debug et métriques
+            import logging
+            logger = logging.getLogger('library')
+            logger.info(f"[SUPPLIER] Fetching details: material={getattr(obj, 'nom', 'N/A')}, supplier_id={str(obj.supplier_id)[:8]}..., tenant={tenant_id[:8]}...")
+            
+            supplier_service = get_supplier_service(tenant_id, auth_token)
+            result = supplier_service.get_supplier_details(str(obj.supplier_id))
+            
+            if result:
+                logger.info(f"[SUPPLIER] Success: Found '{result.get('nom', 'N/A')}' for material {getattr(obj, 'nom', 'N/A')}")
+                return result
+            else:
+                logger.warning(f"[SUPPLIER] No data returned for supplier_id={str(obj.supplier_id)}")
+                return None
+        except Exception as e:
+            # En cas d'erreur, log et retourne None pour graceful degradation
+            import logging
+            logger = logging.getLogger('library')
+            logger.warning(f"Failed to fetch supplier details for {str(obj.supplier_id)}: {e}")
+            return None
+    
+    def _extract_auth_token(self, request) -> str:
+        """
+        🔧 Méthode robuste pour extraire le token d'authentification avec fallbacks multiples
+        """
+        # 1. Via X-Auth-Token (propagé par API Gateway)
+        auth_token = request.headers.get('X-Auth-Token', '').strip()
+        if auth_token:
+            return auth_token
+            
+        # 2. Via Authorization header (appels directs)
+        auth_header = request.headers.get('Authorization', '').strip()
+        if auth_header:
+            return auth_header
+            
+        # 3. Via META (certains proxies)
+        meta_auth = request.META.get('HTTP_AUTHORIZATION', '').strip()
+        if meta_auth:
+            return meta_auth
+            
+        return None
 
 class FournitureDetailSerializer(serializers.ModelSerializer):
     """
@@ -63,15 +129,80 @@ class FournitureDetailSerializer(serializers.ModelSerializer):
     unitPrice = serializers.DecimalField(source='prix_achat_ht', max_digits=10, decimal_places=2, read_only=True)
     vatRate = serializers.DecimalField(source='vat_rate', max_digits=5, decimal_places=2, read_only=True)
     wasteFactor = serializers.DecimalField(source='waste_factor', max_digits=5, decimal_places=2, read_only=True)
+    supplier_details = serializers.SerializerMethodField(read_only=True)
+    effective_supplier_name = serializers.CharField(read_only=True)
     
     class Meta:
         model = Fourniture
         fields = [
             'id', 'nom', 'unite', 'prix_achat_ht', 'categorie', 'categorie_details',
-            'description', 'reference', 'supplier', 'vat_rate', 'type', 'code',
+            'description', 'reference', 'supplier_id', 'supplier_details',
+            'effective_supplier_name', 'vat_rate', 'type', 'code',
             'waste_factor', 'is_recyclable', 'unitPrice', 'vatRate', 'wasteFactor',
             'created_at', 'updated_at'
         ]
+    
+    def get_supplier_details(self, obj):
+        """
+        🚀 Récupère les détails du fournisseur depuis le service CRM avec gestion robuste
+        """
+        if not obj.supplier_id:
+            return None
+        
+        # Récupérer le tenant_id depuis le contexte de la requête
+        request = self.context.get('request')
+        if not request:
+            return None
+            
+        tenant_id = request.headers.get('X-Tenant-ID')
+        if not tenant_id:
+            return None
+        
+        try:
+            # 🚀 SOLUTION ROBUSTE: Récupérer token avec fallbacks multiples
+            auth_token = self._extract_auth_token(request)
+            
+            # Debug et métriques
+            import logging
+            logger = logging.getLogger('library')
+            logger.info(f"[SUPPLIER] Fetching details: material={getattr(obj, 'nom', 'N/A')}, supplier_id={str(obj.supplier_id)[:8]}..., tenant={tenant_id[:8]}...")
+            
+            supplier_service = get_supplier_service(tenant_id, auth_token)
+            result = supplier_service.get_supplier_details(str(obj.supplier_id))
+            
+            if result:
+                logger.info(f"[SUPPLIER] Success: Found '{result.get('nom', 'N/A')}' for material {getattr(obj, 'nom', 'N/A')}")
+                return result
+            else:
+                logger.warning(f"[SUPPLIER] No data returned for supplier_id={str(obj.supplier_id)}")
+                return None
+        except Exception as e:
+            # En cas d'erreur, log et retourne None pour graceful degradation
+            import logging
+            logger = logging.getLogger('library')
+            logger.warning(f"Failed to fetch supplier details for {str(obj.supplier_id)}: {e}")
+            return None
+    
+    def _extract_auth_token(self, request) -> str:
+        """
+        🔧 Méthode robuste pour extraire le token d'authentification avec fallbacks multiples
+        """
+        # 1. Via X-Auth-Token (propagé par API Gateway)
+        auth_token = request.headers.get('X-Auth-Token', '').strip()
+        if auth_token:
+            return auth_token
+            
+        # 2. Via Authorization header (appels directs)
+        auth_header = request.headers.get('Authorization', '').strip()
+        if auth_header:
+            return auth_header
+            
+        # 3. Via META (certains proxies)
+        meta_auth = request.META.get('HTTP_AUTHORIZATION', '').strip()
+        if meta_auth:
+            return meta_auth
+            
+        return None
 
 class MainOeuvreSerializer(serializers.ModelSerializer):
     """
@@ -372,7 +503,6 @@ class LibraryItemSerializer(serializers.Serializer):
     # Champs spécifiques aux fournitures
     vatRate = serializers.DecimalField(max_digits=5, decimal_places=2, required=False, allow_null=True)
     wasteFactor = serializers.DecimalField(max_digits=5, decimal_places=2, required=False, allow_null=True)
-    supplier = serializers.CharField(required=False, allow_null=True)
     
     # Champs spécifiques à la main d'œuvre
     skill_level = serializers.CharField(required=False, allow_null=True)

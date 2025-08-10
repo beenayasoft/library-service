@@ -18,6 +18,9 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,0.0.0.0', cast=lambda v: [s.strip() for s in v.split(',')])
 
+# Services URLs - CRM Service direct (évite les appels récursifs via Gateway)
+CRM_SERVICE_URL = config('CRM_SERVICE_URL', default='http://localhost:8003')
+
 # Application definition
 SHARED_APPS = [
     'django_tenants',  # django-tenants doit être en premier
@@ -233,7 +236,12 @@ LOGGING = {
 SERVICE_NAME = "library-service"
 SERVICE_PORT = config('SERVICE_PORT', default=8005, cast=int)
 
-# Configuration tenant-service pour communication inter-services
+# SOA Configuration pour ServiceClient
+API_GATEWAY_URL = config('API_GATEWAY_URL', default='http://localhost:8000')
+SERVICE_HEALTH_ENDPOINT = '/health/'
+SERVICE_ROUTES = ['/api/library/', '/api/categories/', '/api/fournitures/', '/api/main-oeuvre/', '/api/ouvrages/', '/api/ingredients/']
+
+# Configuration tenant-service pour communication inter-services (Legacy - sera remplacé par ServiceClient)
 TENANT_SERVICE_URL = config('TENANT_SERVICE_URL', default='http://localhost:8001')
 
 # Configuration JWT (alignée avec auth-service et api-gateway)

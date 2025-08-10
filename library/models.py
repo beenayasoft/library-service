@@ -84,11 +84,12 @@ class Fourniture(models.Model):
         null=True, 
         verbose_name="Référence"
     )
-    supplier = models.CharField(
-        max_length=100, 
-        blank=True, 
-        null=True, 
-        verbose_name="Fournisseur"
+    supplier_id = models.UUIDField(
+        blank=True,
+        null=True,
+        verbose_name="Fournisseur CRM",
+        help_text="Référence vers le fournisseur dans le service CRM",
+        db_index=True
     )
     vat_rate = models.DecimalField(
         max_digits=5, 
@@ -134,7 +135,6 @@ class Fourniture(models.Model):
             models.Index(fields=['prix_achat_ht']),
             models.Index(fields=['categorie']),
             models.Index(fields=['reference']),
-            models.Index(fields=['supplier']),
             models.Index(fields=['vat_rate']),
             models.Index(fields=['type']),
             models.Index(fields=['code']),
@@ -146,7 +146,6 @@ class Fourniture(models.Model):
             models.Index(fields=['categorie', 'prix_achat_ht']),
             models.Index(fields=['type', 'categorie']),
             models.Index(fields=['unite', 'categorie']),
-            models.Index(fields=['supplier', 'nom']),
             models.Index(fields=['vat_rate', 'prix_achat_ht']),
             models.Index(fields=['created_at', 'updated_at']),
             models.Index(fields=['categorie', 'type', 'nom']),
@@ -169,6 +168,13 @@ class Fourniture(models.Model):
     def wasteFactor(self):
         """Alias pour waste_factor (compatibilité frontend)"""
         return float(self.waste_factor)
+    
+    @property
+    def effective_supplier_name(self):
+        """Retourne le nom du fournisseur CRM"""
+        if self.supplier_id:
+            return f"Fournisseur CRM: {self.supplier_id}"
+        return None
 
 class MainOeuvre(models.Model):
     """
