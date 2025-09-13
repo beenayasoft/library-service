@@ -183,7 +183,7 @@ def create_fournitures(categories):
         
         if created:
             created_count += 1
-            print(f"   {fourniture.nom} - {fourniture.prix_achat_ht}€/{fourniture.unite}")
+            print(f"   {fourniture.nom} - {fourniture.prix_achat_ht}DH/{fourniture.unite}")
     
     print(f" {created_count} fournitures crees")
 
@@ -244,7 +244,7 @@ def create_main_oeuvre(categories):
         
         if created:
             created_count += 1
-            print(f"   {main_oeuvre.nom} - {main_oeuvre.cout_horaire}€/{main_oeuvre.unite}")
+            print(f"   {main_oeuvre.nom} - {main_oeuvre.cout_horaire}DH/{main_oeuvre.unite}")
     
     print(f" {created_count} types de main d'oeuvre crees")
 
@@ -310,7 +310,7 @@ def create_ouvrages(categories):
         if created:
             created_count += 1
             ouvrages_created.append(ouvrage)
-            print(f"   {ouvrage.nom} - {ouvrage.prix_recommande}€/{ouvrage.unite}")
+            print(f"   {ouvrage.nom} - {ouvrage.prix_recommande}DH/{ouvrage.unite}")
     
     print(f" {created_count} ouvrages crees")
     return ouvrages_created
